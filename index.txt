@@ -2,8 +2,8 @@ vCard - Personal Portfolio
 
 # sidebar
 
-alt = Richard hanrick
-Richard hanrick
+alt = Urvish Rana
+Urvish Rana
 Web developer
 
 Show Contacts
