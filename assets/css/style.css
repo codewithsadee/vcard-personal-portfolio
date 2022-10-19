@@ -158,7 +158,12 @@ html { font-family: var(--ff-poppins); }
 body { background: var(--smoky-black); }
 
 
-
+.timeline-link {
+  color: var(--light-gray);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+  text-decoration: underline;
+}
 
 
 /*-----------------------------------*\
