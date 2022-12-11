@@ -2,14 +2,14 @@ vCard - Personal Portfolio
 
 # sidebar
 
-alt = Richard hanrick
-Richard hanrick
+alt = Mohamed Adel
+Mohamed Adel
 Web developer
 
 Show Contacts
 
 Email
-richard@example.com
+mohamed.adel.elheaty@gmail.com
 
 Phone
 +1 (213) 352-2795
