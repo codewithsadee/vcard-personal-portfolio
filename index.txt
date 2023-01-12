@@ -2,23 +2,23 @@ vCard - Personal Portfolio
 
 # sidebar
 
-alt = Richard hanrick
-Richard hanrick
-Web developer
+alt = Amy Garcia
+Amy Garcia
+IT Project Manager focusing in Product Management 
 
 Show Contacts
 
 Email
-richard@example.com
+amy.garcia579@icloud.com
 
 Phone
-+1 (213) 352-2795
+https://github.com/zalf14
 
-Birthday
-June 23, 1982
+LinkedIn
+https://www.linkedin.com/in/amy-garcia-7028301a1/
 
 Location
-Sacramento, California, USA
+Knoxville, TN, USA
 
 # navbar
 
@@ -32,9 +32,9 @@ Contact
 
 About me
 
-I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media. I enjoy turning complex problems into simple, beautiful and intuitive designs.
+I am a results-oriented individual with a passion for learning and creating strategic visions to manage innovative IT solutions that meet customer needs. Excellent at planning, scoping, strategizing, and managing software development programs and products. 
 
-My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way. I created web design for many famous brand companies.
+I'm a certified Scum Master ensuring our IT division follows agile best practices. I am excellent at Incorporating complex, technical data into engaging presentations for business audiences. I excel at prioritization, time management, organization, working autonomously, collaborating, communicating and maintaining stakeholder confidence
 
 
 ## service
@@ -42,7 +42,7 @@ My job is to build your website so that it is functional and user-friendly but a
 What i'm doing
 
 alt = design icon
-Web design
+Data Analysis
 The most modern and high-quality design made at a professional level.
 
 alt = Web development icon
@@ -93,13 +93,13 @@ Resume
 
 Education
 
-University school of the arts
-2007 — 2008
-Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et quas molestias exceptur.
+Master of Business Administration, MBA - Lincoln Memorial University
+May 2021
+I graduated with a 3.96 GPA and increased my business acumen, including business strategy, operations management, corporate finance, leadership, communication, ethics, accounting and marketing, as well as critical thinking and analytical skills. Highest performing marketing team using Search Engine Optimization (SEO) during my MBA program.
 
-New york academy of art
-2006 — 2007
-Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est omnis..
+Bachelor of Science - BS, Mechanical - University of Tennessee
+May 2011
+ASME and SWE member who graduated with a 3.13 GPA. Increased my knowledge in problem-solving, design, 3-D CAD, creativity and analysis to create solutions for complex problems.
 
 High school of art and design
 2002 — 2004
@@ -107,9 +107,9 @@ Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut
 
 Experience
 
-Creative director
-2015 — Present
-Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas molestias exceptur.
+Senior IT Project Manager
+March 2018 - Present
+Experienced Information Technology Project Manager and Product Manager who has succesfully managed software development projects through their full life cycle, working with developers and cross-functional teams to design, implement, and deploy solutions utilizing agile methodologies Certified Scrum Master & Jira administrator who set up site for entire IT division for 200 employees. Led teams using Scrum, including daily standups, backlog management, and sprint retrospectives. Led the 10-year IT Program Roadmap strategy with 50-million-dollar budget. Created onboarding content, designed curriculum, and supervised new Project & Product Managers. Managed bill redesign project that improved 91% of customers' frustrations and successfully deployed new bill design to over 468,000 customers. Implemented GPS Location solution ensuring safety for hundreds of linemen and technicians.
 
 Art director
 2013 — 2015
