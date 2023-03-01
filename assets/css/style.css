@@ -952,14 +952,16 @@ main {
 }
 
 .filter-select {
-  background: var(--eerie-black-2);
-  color: var(--light-gray);
+  /* background: var(--eerie-black-2); */
+  background-color: var(--eerie-background);
+  color: #2f2f2f;
+  /* color: var(--light-gray); */
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   padding: 12px 16px;
-  border: 1px solid var(--jet);
+  /* border: 1px solid var(--jet); */
   border-radius: 14px;
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
@@ -968,12 +970,13 @@ main {
 .filter-select.active .select-icon { transform: rotate(0.5turn); }
 
 .select-list {
-  background: var(--eerie-black-2);
+  /* background: var(--eerie-black-2); */
+  background-color: var(--eerie-background);
   position: absolute;
   top: calc(100% + 6px);
   width: 100%;
   padding: 6px;
-  border: 1px solid var(--jet);
+  /* border: 1px solid var(--jet); */
   border-radius: 14px;
   z-index: 2;
   opacity: 0;
@@ -989,8 +992,10 @@ main {
 }
 
 .select-item button {
-  background: var(--eerie-black-2);
-  color: var(--light-gray);
+  /* background: var(--eerie-black-2); */
+  /* color: var(--light-gray); */
+  background-color: var(--eerie-background);
+  color: #2f2f2f;
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   text-transform: capitalize;
