@@ -7,15 +7,21 @@
  * copyright 2022 @codewithsadee
  */
 
- @font-face {
+ /* @font-face {
   font-family: 'Pretendard-Regular';
   src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
+} */
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * { 
+ font-family: 'Noto Sans KR', sans-serif;
 }
 
 body {
-	font-family: 'Pretendard-Regular';
+	font-family: 'Noto Sans KR', sans-serif;
 }
 
 
@@ -474,12 +480,16 @@ main {
 }
 
 .social-item .social-link {
-  color: var(--light-gray-70);
+  /* color: var(--light-gray-70); */
+  color: #575757;
   font-size: 18px;
 }
 
 
-.social-item .social-link:hover { color: var(--light-gray); }
+.social-item .social-link:hover { 
+  color: #2f2f2f;
+  /* color: var(--light-gray);  */
+}
 
 
 
@@ -1966,3 +1976,5 @@ textarea.form-input::-webkit-resizer { display: none; }
 .arrow {
   cursor: pointer;
 }
+
+
