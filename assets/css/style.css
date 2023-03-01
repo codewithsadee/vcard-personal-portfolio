@@ -1949,6 +1949,20 @@ textarea.form-input::-webkit-resizer { display: none; }
   gap: 20px;
 }
 
-/* .ora {
-  padding-top: 10px;
-} */
+.download {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  justify-content: end;
+}
+
+.btn {
+  font-size: 12px;
+  font-weight: 600;
+  color: #3d75ec;
+  padding-right: 5px;
+}
+
+.arrow {
+  cursor: pointer;
+}
