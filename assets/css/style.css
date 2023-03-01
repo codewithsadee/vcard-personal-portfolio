@@ -594,7 +594,7 @@ main {
 .service-item-title { margin-bottom: 15px; }
 
 .service-item-text {
-  text-align: center;
+  /* text-align: center; */
   margin-top: 15px;
   font-size: 8px;
   color: #858585;
@@ -1939,16 +1939,16 @@ textarea.form-input::-webkit-resizer { display: none; }
 .flexbox {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 10px 20px;
   align-items: center;
   justify-content: center;
 }
 
 .program_img {
   /* text-align: center; */
-  gap: 5px 20px;
+  gap: 20px;
 }
 
-.ora {
+/* .ora {
   padding-top: 10px;
-}
+} */
