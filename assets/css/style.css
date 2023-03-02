@@ -488,7 +488,8 @@ main {
 .social-item .social-link {
   /* color: var(--light-gray-70); */
   color: #575757;
-  font-size: 18px;
+  display: flex;
+  font-size: 12px;
 }
 
 
