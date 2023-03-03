@@ -2015,8 +2015,22 @@ textarea.form-input::-webkit-resizer { display: none; }
   height: auto;
 }
 
+
 .youtube {
+  color: white;
+  font-weight: 600;
+  font-size: 13px;
   text-align: center;
-  font-weight: 700;
-  padding-bottom: 30px;
+  letter-spacing: 1px;
+
+  width: 200px;
+  height: 35px;
+  background-color: #3d75ec;
+  border-radius: 30px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.youtube:hover {
+  background-color: #134ece;
 }
