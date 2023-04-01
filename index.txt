@@ -2,23 +2,23 @@ vCard - Personal Portfolio
 
 # sidebar
 
-alt = Richard hanrick
-Richard hanrick
-Web developer
+alt = Vinay Kiran Raju Meesaraganda
+Vinay Meesaraganda
+Data Analyst/Engineer
 
 Show Contacts
 
 Email
-richard@example.com
+raj.vinay2408@gmail.com
 
 Phone
-+1 (213) 352-2795
++1 (201) 492-8306
 
 Birthday
-June 23, 1982
+March 11, 2000
 
 Location
-Sacramento, California, USA
+Jersey City, NJ, USA
 
 # navbar
 
@@ -32,14 +32,12 @@ Contact
 
 About me
 
-I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media. I enjoy turning complex problems into simple, beautiful and intuitive designs.
-
-My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way. I created web design for many famous brand companies.
+I'm a Master's student in Data Science with experience as a data engineer and a passion for data analytics. I've obtained certifications from top companies in the industry, and this portfolio showcases some of my best work in data cleaning, predictive modeling, and interactive visualization
 
 
 ## service
 
-What i'm doing
+certifications
 
 alt = design icon
 Web design
