@@ -2,8 +2,8 @@ vCard - Personal Portfolio
 
 # sidebar
 
-alt = Richard hanrick
-Richard hanrick
+alt = Priyank Thakkar
+Priyank Thakkar
 Web developer
 
 Show Contacts
