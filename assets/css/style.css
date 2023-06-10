@@ -332,8 +332,20 @@ main {
 }
 
 .avatar-box {
-  background: var(--bg-gradient-onyx);
+  /* background: var(--bg-gradient-onyx); */
   border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 .info-content .name {
