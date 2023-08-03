@@ -78,6 +78,7 @@ for (let i = 0; i < selectItems.length; i++) {
 // filter variables
 const filterItems = document.querySelectorAll("[data-filter-item]");
 
+
 const filterFunc = function (selectedValue) {
 
   for (let i = 0; i < filterItems.length; i++) {
@@ -92,6 +93,38 @@ const filterFunc = function (selectedValue) {
 
   }
 
+}
+
+// Get all the modals
+var modals = document.querySelectorAll('.modal');
+
+// Get all the items that will open the modals
+var modalItems = document.querySelectorAll('[data-modal-item]');
+
+// Get all the elements that close the modals
+var closeButtons = document.querySelectorAll('.close');
+
+// When the user clicks on a modal item, open the corresponding modal 
+modalItems.forEach((modalItem, index) => {
+  modalItem.onclick = function() {
+    modals[index].style.display = "block";
+  }
+});
+
+// When the user clicks on a close button, close the corresponding modal
+closeButtons.forEach((closeButton, index) => {
+  closeButton.onclick = function() {
+    modals[index].style.display = "none";
+  }
+});
+
+// When the user clicks anywhere outside of a modal, close it
+window.onclick = function(event) {
+  modals.forEach((modal, index) => {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  });
 }
 
 // add event in all filter button items for large screen

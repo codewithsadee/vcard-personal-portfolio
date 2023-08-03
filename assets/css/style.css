@@ -791,8 +791,9 @@ main {
 
 .timeline-item-title {
   font-size: var(--fs-6);
-  line-height: 1.3;
+  line-height: 0.45;
   margin-bottom: 7px;
+  display: inline;
 }
 
 .timeline-list span {
@@ -821,6 +822,20 @@ main {
   background: var(--text-gradient-yellow);
   border-radius: 50%;
   box-shadow: 0 0 0 4px var(--jet);
+}
+
+.timeline-location {
+  color: var(--light-gray);
+  font-weight: var(--fw-300);
+  line-height: 1.3;
+  font-style: italic;
+  display: inline;
+  padding-left: -5px;
+}
+
+.timeline-separator {
+  margin: 0 10px;
+  display: inline
 }
 
 .timeline-text {
@@ -1025,6 +1040,45 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
 }
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 
 
 
