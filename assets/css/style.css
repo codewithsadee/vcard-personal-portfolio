@@ -540,7 +540,14 @@ main {
   z-index: -1;
 }
 
-.service-icon-box { margin-bottom: 10px; }
+.service-icon-box img[src="./assets/images/crojew.png"] {
+  width: 50px; /* Change this to your desired width */
+  height: auto; /* This will keep the aspect ratio of the image */
+  vertical-align: middle; /* This will help vertically center the image if it's not already centered */
+  margin-top: -10px; /* Moves the image up by 5 pixels */
+  margin-left: -4px; /* Moves the image to the left by 5 pixels */
+}
+
 
 .service-icon-box img { margin: auto; }
 
