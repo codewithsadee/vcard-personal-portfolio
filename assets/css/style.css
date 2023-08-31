@@ -960,17 +960,32 @@ main {
   border-radius: 16px;
   overflow: hidden;
   margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.project-img:hover {
+  transform: scale(1.05);
+}
+
+.project-item-icon-box {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  opacity: 0;
+  z-index: 1;
+  transition: var(--transition-1), opacity 0.3s ease;
 }
 
 .project-img::before {
   content: "";
   position: absolute;
   top: 0;
+  scale: 105px;
   left: 0;
   width: 100%;
   height: 100%;
   background: transparent;
-  z-index: 1;
+  z-index: 10;
   transition: var(--transition-1);
 }
 
