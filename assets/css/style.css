@@ -1863,3 +1863,41 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+
+#myDiv {
+  display: none;
+}
+
+svg.curved-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  stroke-opacity: 0;
+  animation: draw-curve 5s forwards;
+}
+svg.curved-line path {
+  stroke-width: 2;
+  filter: url(#dropshadow);
+}
+svg.curved-line linearGradient stop:nth-child(1) {
+  stop-color: #FBDA61;
+}
+svg.curved-line linearGradient stop:nth-child(2) {
+  stop-color: #F76B1C;
+}
+
+@keyframes draw-curve {
+  20% {
+    stroke-opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke-opacity: 1;
+  }
+}
+

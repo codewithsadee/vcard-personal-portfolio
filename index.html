@@ -4,8 +4,40 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="referrer" content="origin-when-cross-origin">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=2">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="description"
+    content="Hello, I am Lokendra, a dedicated and proficient programmer and developer with a primary focus on Fullstack....">
+  <meta property="og:title" content="Lokendra Sharma">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="et-api-version" content="v1">
+  <meta name="et-api-origin" content="https://www.loken.me">
+  <meta name="generator" content="Powered by Lokendra Sharma" />
+  <meta name="msapplication-TileImage" content="./assets/images/my-avatar.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><Label>Lokendra</Label></title>
+  <meta name="theme-color" content="#ffc864">
+  <meta name="msapplication-TileColor" content="#ffc864">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#ffc864">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="Lokendra">
+  <meta name="apple-mobile-web-app-title" content="Lokendra">
+  <meta name="msapplication-navbutton-color" content="#ffc864">
+  <meta name="keywords"
+    content="Lokendra, Lokendra Sharma, Lokendra Sharma Portfolio, Lokendra Sharma Resume, Lokendra Sharma CV, Lokendra Sharma Jaipur, Lokendra Sharma Rajasthan, Lokendra Sharma India, Lokendra Sharma Software Developer, Lokendra Sharma Full Stack Developer, Lokendra Sharma Web Developer, Lokendra Sharma Android Developer, Lokendra Sharma .Net Developer, Lokendra Sharma C# Developer, Lokendra Sharma Java Developer, Lokendra Sharma JavaScript Developer, Lokendra Sharma PHP Developer, Lokendra Sharma Python Developer, Lokendra Sharma React Developer, Lokendra Sharma Node Developer, Lokendra Sharma Express Developer, Lokendra Sharma MongoDB Developer, Lokendra Sharma MySQL Developer, Lokendra Sharma SQL Developer, Lokendra Sharma Firebase Developer, Lokendra Sharma Cloud Developer, Lokendra Sharma Cloud Engineer, Lokendra Sharma Cloud Architect, Lokendra Sharma Cloud Developer, Lokendra Sh">
+  <meta name="author" content="Lokendra Sharma">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  <meta name="google" content="nositelinkssearchbox">
+  <meta name="google" content="notranslate">
+  <meta name="google" content="nositelinkssearchbox">
+  <meta name="google" content="notranslate">
+  <meta name="google-site-verification" content="google-site-verification=4Z3Z3Z3Z3Z3Z3Z3Z3Z3Z3Z3Z3Z3Z3Z3Z3Z3Z3Z">
+  <meta name="google-site-verification" content="google-site-verification=4Z3Z3Z3Z3Z3Z3Z3Z3Z3Z3Z3Z3Z3Z3Z3Z3Z3Z3Z">
+  <title>Lokendra</title>
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,51 +45,71 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
-<body>
-  <main>
-    <aside class="sidebar" data-sidebar>
+<body onload="myFunction()">
+  <div id="loader">
+    <svg class="curved-line" width="199" height="57" viewBox="0 0 199 57" fill="none">
+      <defs>
+        <linearGradient x1="50%" y1="108.24102%" x2="50%" y2="29.9104628%" id="curved-line-gradient">
+          <stop offset="0%"></stop>
+          <stop offset="100%"></stop>
+        </linearGradient>
+        <path xmlns="http://www.w3.org/2000/svg"
+          d="M21.2921 1C17.9561 14.9963 15.2582 29.5993 9.69799 42.9587C8.47148 45.9056 7.0867 48.4099 4.66295 50.4244C3.94014 51.0252 2.9383 51.0781 2.03932 51.0032C0.0596738 50.8382 1.36905 46.6191 2.19366 45.7945C3.90415 44.084 6.65949 42.0417 9.06138 41.6276C11.51 41.2054 13.7042 43.4467 16.2763 43.8654C19.8741 44.4511 25.5238 44.6679 25.787 39.93C25.8353 39.0603 26.157 37.9074 25.0346 37.8272C22.3544 37.6358 21.9144 39.8055 21.7165 42.0906C21.5544 43.9617 21.2742 46.1791 23.9543 45.2544C26.6605 44.3206 28.5978 42.2678 30.1854 39.9685C31.0712 38.6856 32.9211 34.3659 32.1917 35.7437C31.8923 36.3092 30.7711 39.6124 31.613 39.9685C32.851 40.4923 35.0797 39.4224 36.0307 38.8882C39.4012 36.995 42.5109 33.7794 44.4417 30.4386C47.9552 24.3594 49.4214 16.2526 50.3835 9.37245C50.3864 9.35134 51.2126 3.46688 49.959 4.78111C48.1781 6.64824 47.1 10.2821 46.2551 12.4976C44.5369 17.0033 43.14 21.5887 41.8567 26.2331C41.1375 28.836 40.4433 31.4354 39.6189 34.0075C39.3871 34.7307 39.0016 35.538 39.0016 36.3225C39.0016 37.9321 38.8299 39.4985 38.3071 41.0296C38.0957 41.6486 37.2858 44.2662 36.648 44.5213C36.1638 44.715 36.5709 43.4802 36.5709 42.9587C36.5709 42.052 36.5709 41.1453 36.5709 40.2386C36.5709 39.4334 36.2514 37.8416 36.7831 37.1327C37.7696 35.8173 39.8393 34.6759 41.1043 33.6217C43.9102 31.2834 47.026 28.7806 49.1874 25.8087C49.6342 25.1944 50.7897 23.3477 49.0331 23.9567C46.5537 24.8162 44.575 27.2459 43.0527 29.2618C42.1094 30.5111 39.1845 33.832 39.8504 35.7244C40.6717 38.0587 43.6899 38.547 45.7921 38.6953C48.704 38.9007 51.6903 38.6961 54.5697 38.2516C56.1761 38.0036 59.4336 37.7426 60.087 35.7823C60.5982 34.2489 60.2001 33.2937 58.6209 33.2937C54.7126 33.2937 52.835 37.1201 51.9268 40.5087C51.6291 41.6193 51.3695 42.8954 51.5024 44.0583C51.7519 46.2419 58.1762 42.9004 58.9102 42.3221C60.4849 41.0815 61.4427 39.3336 62.2284 37.5378C62.5693 36.7585 62.5489 36.2364 63.2315 35.7244C64.236 34.9711 63.5494 36.6532 63.4244 37.4607C63.2988 38.2722 62.3447 40.9727 62.8264 41.7433C62.9124 41.881 63.1362 41.6046 63.2315 41.4733C63.6413 40.9083 64.9256 38.4399 65.1606 38.0008C66.1526 36.1479 67.6429 32.111 68.4402 36.1488C68.6091 37.0043 68.6311 39.6499 69.8291 39.9878C71.198 40.3739 73.9813 36.6751 74.7292 35.9366C74.8633 35.8042 79.8619 31.0491 77.5457 31.7697C74.7501 32.6395 72.8245 36.632 72.6843 39.3898C72.5632 41.7711 77.4425 37.8927 77.8929 37.5764C84.2409 33.1193 86.7471 27.5647 88.1174 20.1177C88.3295 18.9646 90.4878 9.90357 88.754 16.0473C85.5327 27.4618 82.7737 38.9818 80.6709 50.6559C80.2538 52.9716 79.9629 54.1264 81.7898 51.6977C83.895 48.899 85.9319 45.9721 87.7508 42.978C88.7005 41.4146 88.8815 39.8185 90.3166 38.6567C90.9227 38.166 91.0896 38.078 91.7441 38.078C92.9933 38.078 96.5779 33.9522 97.03 35.8016C97.3952 37.2958 96.0032 39.7678 96.702 41.0488C97.2769 42.1028 100.764 39.3516 101.544 39.3126C101.978 39.2909 101.653 40.0836 102.123 39.9492C103.625 39.52 105.33 37.6303 106.483 36.7276C106.77 36.5026 112 31.8285 111.865 34.1233C111.679 37.2884 108.887 39.5403 106.502 41.2225C95.9794 48.6454 82.3904 53.0532 69.7134 54.5142C66.3401 54.903 62.6202 55.2804 59.1996 55.093C57.1354 54.9798 60.0439 53.4333 60.415 53.2024C65.8784 49.8034 71.7809 47.3655 77.9315 45.4859C101.176 38.3823 125.825 35.6207 149.946 33.5445C163.773 32.3544 177.643 31.6969 191.519 31.5575C192.985 31.5428 194.452 31.5601 195.917 31.5961C196.607 31.613 198.271 31.2882 197.962 31.9047C197.715 32.3988 195.817 32.4882 195.262 32.5992"
+          stroke-width="1" stroke-linecap="round" id="curved-line" />
+      </defs>
+      <g stroke="none" fill="none">
+        <use stroke="url(#curved-line-gradient)" xlink:href="#curved-line"></use>
+      </g>
+    </svg>
+  </div>
+  <div style="display:none;" id="myDiv" class="animate-bottom">
 
-      <div class="sidebar-info">
 
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
-        </figure>
 
-        <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Lokendra Sharma</h1>
+    <main>
+      <aside class="sidebar" data-sidebar>
 
-          <p class="title">Software developer</p>
+        <div class="sidebar-info">
+
+          <figure class="avatar-box">
+            <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Richard hanrick">Lokendra Sharma</h1>
+
+            <p class="title">Software developer</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+        <div class="sidebar-info_more">
 
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
+          <div class="separator"></div>
 
-      </div>
+          <ul class="contacts-list">
 
-      <div class="sidebar-info_more">
+            <li class="contact-item">
 
-        <div class="separator"></div>
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
 
-        <ul class="contacts-list">
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
 
-          <li class="contact-item">
+                <a href="mailto:lokendrash7@gmail.com" class="contact-link">Lokendrash7@gmail.com</a>
+              </div>
 
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
+            </li>
 
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:lokendrash7@gmail.com" class="contact-link">Lokendrash7@gmail.com</a>
-            </div>
-
-          </li>
-
-          <!-- <li class="contact-item">
+            <!-- <li class="contact-item">
 
             <div class="icon-box">
               <ion-icon name="phone-portrait-outline"></ion-icon>
@@ -70,7 +122,7 @@
             </div>
 
           </li> -->
-          <!-- 
+            <!-- 
           <li class="contact-item">
 
             <div class="icon-box">
@@ -85,136 +137,142 @@
 
           </li> -->
 
-          <li class="contact-item">
+            <li class="contact-item">
 
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
 
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
 
-              <address>Jaipur, Rajasthan, India</address>
-            </div>
+                <address>Jaipur, Rajasthan, India</address>
+              </div>
 
-          </li>
+            </li>
 
-        </ul>
+          </ul>
 
-        <div class="separator"></div>
+          <div class="separator"></div>
 
-        <ul class="social-list">
+          <ul class="social-list">
 
-          <li class="social-item">
-            <a href="https://github.com/volvein" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
+            <li class="social-item">
+              <a href="https://github.com/volvein" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
 
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/lokendrash" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
+            <li class="social-item">
+              <a href="https://www.linkedin.com/in/lokendrash" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
 
-          <li class="social-item">
-            <a href="https://www.instagram.com/thelokendrasharma" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
+            <li class="social-item">
+              <a href="https://www.instagram.com/thelokendrasharma" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
 
-          <li class="social-item">
-            <a href="https://www.cloudskillsboost.google/public_profiles/604adc00-652e-47f4-abb5-0bacace3578b" class="social-link">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="#ffc864" style=" width: 19px; padding-top: 7px; " height="32" viewBox="0 0 32 32" width="32"><path d="m19.131 24.271c3.859-1.505 6.099-5.547 5.333-9.615-.767-4.072-4.319-7.025-8.464-7.031-4.145 0-7.708 2.953-8.473 7.025-.767 4.079 1.479 8.12 5.343 9.62.604.26 1.271-.177 1.281-.828v-7.197c0-1.021.828-1.849 1.849-1.849s1.849.828 1.849 1.849v7.197c.011.651.677 1.084 1.281.828zm1.077 7.412c6.797-1.844 11.792-8.057 11.792-15.437 0-8.839-7.161-16-16-16s-16 7.161-16 16c0 7.38 4.995 13.593 11.792 15.437.02.011.047.015.068.02l.077.021v-.005c2.344.479 3.156-2.973.849-3.593-5.959-1.609-9.803-7.38-8.989-13.5.812-6.115 6.031-10.688 12.197-10.688 6.172 0 11.391 4.568 12.203 10.683.819 6.12-3.025 11.891-8.979 13.505-2.312.615-1.495 4.072.844 3.593h.005l.077-.021z"/></svg>            </a>
-          </li>
-        </ul>
+            <li class="social-item">
+              <a href="https://www.cloudskillsboost.google/public_profiles/604adc00-652e-47f4-abb5-0bacace3578b"
+                class="social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="#ffc864" style=" width: 19px; padding-top: 7px; "
+                  height="32" viewBox="0 0 32 32" width="32">
+                  <path
+                    d="m19.131 24.271c3.859-1.505 6.099-5.547 5.333-9.615-.767-4.072-4.319-7.025-8.464-7.031-4.145 0-7.708 2.953-8.473 7.025-.767 4.079 1.479 8.12 5.343 9.62.604.26 1.271-.177 1.281-.828v-7.197c0-1.021.828-1.849 1.849-1.849s1.849.828 1.849 1.849v7.197c.011.651.677 1.084 1.281.828zm1.077 7.412c6.797-1.844 11.792-8.057 11.792-15.437 0-8.839-7.161-16-16-16s-16 7.161-16 16c0 7.38 4.995 13.593 11.792 15.437.02.011.047.015.068.02l.077.021v-.005c2.344.479 3.156-2.973.849-3.593-5.959-1.609-9.803-7.38-8.989-13.5.812-6.115 6.031-10.688 12.197-10.688 6.172 0 11.391 4.568 12.203 10.683.819 6.12-3.025 11.891-8.979 13.505-2.312.615-1.495 4.072.844 3.593h.005l.077-.021z" />
+                </svg> </a>
+            </li>
+          </ul>
 
-      </div>
+        </div>
 
-    </aside>
-
-
+      </aside>
 
 
 
-    <!--
+
+
+      <!--
       - #main-content
     -->
 
-    <div class="main-content">
+      <div class="main-content">
 
-      <!--
+        <!--
         - #NAVBAR
       -->
 
-      <nav class="navbar">
+        <nav class="navbar">
 
-        <ul class="navbar-list">
+          <ul class="navbar-list">
 
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link  active" data-nav-link>About</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
 
-          <!-- <li class="navbar-item">
+            <!-- <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Blog</button>
           </li> -->
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
 
-        </ul>
+          </ul>
 
-      </nav>
-
-
+        </nav>
 
 
 
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            Hello, I am Lokendra, a dedicated and proficient programmer and developer with a primary focus on Fullstack
-            Web and Android application development. My professional journey is centered in Jaipur, Rajasthan, India,
-            and I am delighted to provide you with insights into my background and experience in the realm of
-            programming and development.
-          </p>
-
-          <p>
-            My goal is to continually harness technology to craft streamlined, aesthetically pleasing, and intuitive
-            designs that address complex challenges. I am committed to delivering high-quality solutions that not only
-            meet but exceed expectations.
-          </p>
-        </section>
 
 
         <!--
+        - #ABOUT
+      -->
+
+        <article class="about  active" data-page="about">
+
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              Hello, I am Lokendra, a dedicated and proficient programmer and developer with a primary focus on
+              Fullstack
+              Web and Android application development. My professional journey is centered in Jaipur, Rajasthan, India,
+              and I am delighted to provide you with insights into my background and experience in the realm of
+              programming and development.
+            </p>
+
+            <p>
+              My goal is to continually harness technology to craft streamlined, aesthetically pleasing, and intuitive
+              designs that address complex challenges. I am committed to delivering high-quality solutions that not only
+              meet but exceed expectations.
+            </p>
+          </section>
+
+
+          <!--
           - service
         -->
 
-        <section class="service">
+          <section class="service">
 
-          <h3 class="h3 service-title">What i'm doing</h3>
+            <h3 class="h3 service-title">What i'm doing</h3>
 
-          <ul class="service-list">
-            <!-- 
+            <ul class="service-list">
+              <!-- 
             <li class="service-item">
 
               <div class="service-icon-box">
@@ -232,23 +290,23 @@
 
             </li> -->
 
-            <li class="service-item">
+              <li class="service-item">
 
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
+                <div class="service-icon-box">
+                  <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+                </div>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web development</h4>
 
-                <p class="service-item-text">
-                  Developing static or enterprise web applications.
-                </p>
-              </div>
+                  <p class="service-item-text">
+                    Developing static or enterprise web applications.
+                  </p>
+                </div>
 
-            </li>
+              </li>
 
-            <!-- <li class="service-item">
+              <!-- <li class="service-item">
 
               <div class="service-icon-box">
                 <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
@@ -264,7 +322,7 @@
 
             </li> -->
 
-            <!-- <li class="service-item">
+              <!-- <li class="service-item">
 
               <div class="service-icon-box">
                 <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
@@ -280,16 +338,16 @@
 
             </li> -->
 
-          </ul>
+            </ul>
 
-        </section>
+          </section>
 
 
-        <!--
+          <!--
           - testimonials
         -->
 
-        <!-- <section class="testimonials">
+          <!-- <section class="testimonials">
 
           <h3 class="h3 testimonials-title">Testimonials</h3>
 
@@ -388,11 +446,11 @@
         </section> -->
 
 
-        <!--
+          <!--
           - testimonials modal
         -->
 
-        <!-- <div class="modal-container" data-modal-container>
+          <!-- <div class="modal-container" data-modal-container>
 
           <div class="overlay" data-overlay></div>
 
@@ -433,11 +491,11 @@
         </div> -->
 
 
-        <!--
+          <!--
           - clients
         -->
 
-        <!-- <section class="clients">
+          <!-- <section class="clients">
 
           <h3 class="h3 clients-title">Clients</h3>
 
@@ -483,299 +541,302 @@
 
         </section> -->
 
-      </article>
+        </article>
 
 
 
 
 
-      <!--
+        <!--
         - #RESUME
       -->
 
-      <article class="resume" data-page="resume">
+        <article class="resume" data-page="resume">
 
-        <header>
-          <h2 class="h2 article-title" style="display: inline-flex;">Resume <a href="/assets/file/resume.pdf"
-              download="Lokendra_Sharma_CV"
-              style="width: 25px;padding-top: 5px;/*! padding-left: 0px; */margin-left: 20px;">
-              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                <g id="SVGRepo_iconCarrier">
-                  <path
-                    d="M17 17H17.01M17.4 14H18C18.9319 14 19.3978 14 19.7654 14.1522C20.2554 14.3552 20.6448 14.7446 20.8478 15.2346C21 15.6022 21 16.0681 21 17C21 17.9319 21 18.3978 20.8478 18.7654C20.6448 19.2554 20.2554 19.6448 19.7654 19.8478C19.3978 20 18.9319 20 18 20H6C5.06812 20 4.60218 20 4.23463 19.8478C3.74458 19.6448 3.35523 19.2554 3.15224 18.7654C3 18.3978 3 17.9319 3 17C3 16.0681 3 15.6022 3.15224 15.2346C3.35523 14.7446 3.74458 14.3552 4.23463 14.1522C4.60218 14 5.06812 14 6 14H6.6M12 15V4M12 15L9 12M12 15L15 12"
-                    stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    style="--darkreader-inline-stroke: #e8e6e3;" data-darkreader-inline-stroke=""></path>
-                </g>
-              </svg></a></h2>
+          <header>
+            <h2 class="h2 article-title" style="display: inline-flex;">Resume <a href="/assets/file/resume.pdf"
+                download="Lokendra_Sharma_CV"
+                style="width: 25px;padding-top: 5px;/*! padding-left: 0px; */margin-left: 20px;">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M17 17H17.01M17.4 14H18C18.9319 14 19.3978 14 19.7654 14.1522C20.2554 14.3552 20.6448 14.7446 20.8478 15.2346C21 15.6022 21 16.0681 21 17C21 17.9319 21 18.3978 20.8478 18.7654C20.6448 19.2554 20.2554 19.6448 19.7654 19.8478C19.3978 20 18.9319 20 18 20H6C5.06812 20 4.60218 20 4.23463 19.8478C3.74458 19.6448 3.35523 19.2554 3.15224 18.7654C3 18.3978 3 17.9319 3 17C3 16.0681 3 15.6022 3.15224 15.2346C3.35523 14.7446 3.74458 14.3552 4.23463 14.1522C4.60218 14 5.06812 14 6 14H6.6M12 15V4M12 15L9 12M12 15L15 12"
+                      stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      style="--darkreader-inline-stroke: #e8e6e3;" data-darkreader-inline-stroke=""></path>
+                  </g>
+                </svg></a></h2>
 
-        </header>
+          </header>
 
-        <section class="timeline">
+          <section class="timeline">
 
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="school-outline"></ion-icon>
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="school-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
             </div>
 
-            <h3 class="h3">Education</h3>
-          </div>
+            <ol class="timeline-list">
 
-          <ol class="timeline-list">
+              <li class="timeline-item">
 
-            <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">arya institute of engineering and technology, Jaipur</h4>
 
-              <h4 class="h4 timeline-item-title">arya institute of engineering and technology, Jaipur</h4>
+                <span>2021 — 2024 (Pursuing)</span>
 
-              <span>2021 — 2024 (Pursuing)</span>
+                <p class="timeline-text" style="padding-left: 20px;">
+                  Now, i'm pursuing my B.Tech in Computer Science branch. also i learn the various programming languages
+                  like c, c++, java, .NET, javascript, etc., and also learn the web development and android development.
+                </p>
 
-              <p class="timeline-text" style="padding-left: 20px;">
-                Now, i'm pursuing my B.Tech in Computer Science branch. also i learn the various programming languages
-                like c, c++, java, .NET, javascript, etc., and also learn the web development and android development.
-              </p>
+              </li>
 
-            </li>
+              <li class="timeline-item">
 
-            <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">govt ramchandra khaitan polytechnic college, Jaipur</h4>
 
-              <h4 class="h4 timeline-item-title">govt ramchandra khaitan polytechnic college, Jaipur</h4>
+                <span>2017 — 2020</span>
 
-              <span>2017 — 2020</span>
+                <p class="timeline-text" style="padding-left: 20px;">
+                  i'm passout student of Electronics and Communication Engineering branch. also i learn the iot and
+                  arduino programming.
+                </p>
 
-              <p class="timeline-text" style="padding-left: 20px;">
-                i'm passout student of Electronics and Communication Engineering branch. also i learn the iot and
-                arduino programming.
-              </p>
+              </li>
 
-            </li>
+              <li class="timeline-item">
 
-            <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">board of senior secondary Education, ajmar</h4>
 
-              <h4 class="h4 timeline-item-title">board of senior secondary Education, ajmar</h4>
+                <span>2016-2017</span>
 
-              <span>2016-2017</span>
+                <p class="timeline-text">
+                  student of science stream.
+                </p>
 
-              <p class="timeline-text">
-                student of science stream.
-              </p>
+              </li>
 
-            </li>
+            </ol>
 
-          </ol>
+          </section>
 
-        </section>
+          <section class="timeline">
 
-        <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="git-network-outline"></ion-icon>
+              </div>
 
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="git-network-outline"></ion-icon>
+              <h3 class="h3">Experience</h3>
             </div>
 
-            <h3 class="h3">Experience</h3>
-          </div>
+            <ol class="timeline-list">
 
-          <ol class="timeline-list">
+              <li class="timeline-item">
 
-            <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Ambient Lab</h4>
+                <span>July 2023 — Present</span>
+                <span>.Net Developer</span>
 
-              <h4 class="h4 timeline-item-title">Ambient Lab</h4>
-              <span>July 2023 — Present</span>
-              <span>.Net Developer</span>
+                <p class="timeline-text" style="padding-left: 20px;">
+                  Design and develop lab management web applications ASP.NET MVC/Core, ensuring high-quality and
+                  efficient
+                  code.
+                </p>
+                <p class="timeline-text" style="padding-left: 20px;">
+                  Also actively involved in ongoing Lab projects, providing support and implementing enhancements to
+                  existing systems.
+                </p>
+              </li>
 
-              <p class="timeline-text" style="padding-left: 20px;">
-                Design and develop lab management web applications ASP.NET MVC/Core, ensuring high-quality and efficient
-                code.
-              </p>
-              <p class="timeline-text" style="padding-left: 20px;">
-                Also actively involved in ongoing Lab projects, providing support and implementing enhancements to
-                existing systems.
-              </p>
-            </li>
+              <li class="timeline-item">
 
-            <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Ezytm Technology Pvt. Ltd.</h4>
 
-              <h4 class="h4 timeline-item-title">Ezytm Technology Pvt. Ltd.</h4>
-
-              <span>March 2022 — July 2023</span>
-              <span>.Net Developer</span>
+                <span>March 2022 — July 2023</span>
+                <span>.Net Developer</span>
 
 
-              <p class="timeline-text" style="padding-left: 20px;">
-                Design and develop web applications using C#, .NET Framework, and ASP.NET MVC/Core, ensuring
-                high-quality and efficient code.
-              </p>
-              <p class="timeline-text" style="padding-left: 20px;">
-                Contribute to the working of existing recharge mobile applications,Implemented API integration to fetch
-                responses, improving data retrieval and application performance.
-              </p>
-              <p class="timeline-text" style="padding-left: 20px;">
-                Also actively involved in ongoing ecommerce projects, providing support and implementing enhancements to
-                existing systems.
-              </p>
-            </li>
+                <p class="timeline-text" style="padding-left: 20px;">
+                  Design and develop web applications using C#, .NET Framework, and ASP.NET MVC/Core, ensuring
+                  high-quality and efficient code.
+                </p>
+                <p class="timeline-text" style="padding-left: 20px;">
+                  Contribute to the working of existing recharge mobile applications,Implemented API integration to
+                  fetch
+                  responses, improving data retrieval and application performance.
+                </p>
+                <p class="timeline-text" style="padding-left: 20px;">
+                  Also actively involved in ongoing ecommerce projects, providing support and implementing enhancements
+                  to
+                  existing systems.
+                </p>
+              </li>
 
-          </ol>
+            </ol>
 
-        </section>
+          </section>
 
-        <section class="timeline">
+          <section class="timeline">
 
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Certification & Achievement </h3>
             </div>
 
-            <h3 class="h3">Certification & Achievement </h3>
-          </div>
+            <ol class="timeline-list">
 
-          <ol class="timeline-list">
+              <li class="timeline-item">
 
-            <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Proficiency in C# Technology by Swati Computers
+                </h4>
+                <span>Jan 2021 - May 2021</span>
+                <span>Training Certification</span>
 
-              <h4 class="h4 timeline-item-title">Proficiency in C# Technology by Swati Computers
-              </h4>
-              <span>Jan 2021 - May 2021</span>
-              <span>Training Certification</span>
+                <p class="timeline-text" style="padding-left: 20px;">
+                  Developed real-world applications using C# and .NET Framework.
+                </p>
+                <p class="timeline-text" style="padding-left: 20px;">
+                  Successfully integrated MSSQL databases to manage and store application data.
+                </p>
+              </li>
 
-              <p class="timeline-text" style="padding-left: 20px;">
-                Developed real-world applications using C# and .NET Framework.
-              </p>
-              <p class="timeline-text" style="padding-left: 20px;">
-                Successfully integrated MSSQL databases to manage and store application data.
-              </p>
-            </li>
+              <li class="timeline-item">
 
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Industrial IoT on Google Cloud</h4>
-              <span>April 2020</span>
-              <span>Coursera Certification</span>
-            </li>
+                <h4 class="h4 timeline-item-title">Industrial IoT on Google Cloud</h4>
+                <span>April 2020</span>
+                <span>Coursera Certification</span>
+              </li>
 
 
-            <li class="timeline-item">
+              <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Getting Started with AWS Machine Learning</h4>
-              <span>May 2020</span>
-              <span>Coursera Certification</span>
-            </li>
-          </ol>
+                <h4 class="h4 timeline-item-title">Getting Started with AWS Machine Learning</h4>
+                <span>May 2020</span>
+                <span>Coursera Certification</span>
+              </li>
+            </ol>
 
-        </section>
+          </section>
 
-        <section class="skill">
+          <section class="skill">
 
-          <h3 class="h3 skills-title">My skills</h3>
+            <h3 class="h3 skills-title">My skills</h3>
 
-          <ul class="skills-list content-card">
+            <ul class="skills-list content-card">
 
-            <li class="skills-item">
+              <li class="skills-item">
 
-              <div class="title-wrapper">
-                <h5 class="h5">.NET Framework/Core</h5>
-                <data value="100"></data>
-              </div>
+                <div class="title-wrapper">
+                  <h5 class="h5">.NET Framework/Core</h5>
+                  <data value="100"></data>
+                </div>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 100%;"></div>
-              </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 100%;"></div>
+                </div>
 
-            </li>
+              </li>
 
-            <li class="skills-item">
+              <li class="skills-item">
 
-              <div class="title-wrapper">
-                <h5 class="h5">SQL/RDBMS</h5>
-                <data value="100"></data>
-              </div>
+                <div class="title-wrapper">
+                  <h5 class="h5">SQL/RDBMS</h5>
+                  <data value="100"></data>
+                </div>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 100%;"></div>
-              </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 100%;"></div>
+                </div>
 
-            </li>
+              </li>
 
-            <li class="skills-item">
+              <li class="skills-item">
 
-              <div class="title-wrapper">
-                <h5 class="h5">Java</h5>
-                <data value="100"></data>
-              </div>
+                <div class="title-wrapper">
+                  <h5 class="h5">Java</h5>
+                  <data value="100"></data>
+                </div>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 100%;"></div>
-              </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 100%;"></div>
+                </div>
 
-            </li>
-            <li class="skills-item">
+              </li>
+              <li class="skills-item">
 
-              <div class="title-wrapper">
-                <h5 class="h5">Html/CSS</h5>
-                <data value="100"></data>
-              </div>
+                <div class="title-wrapper">
+                  <h5 class="h5">Html/CSS</h5>
+                  <data value="100"></data>
+                </div>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 100%;"></div>
-              </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 100%;"></div>
+                </div>
 
-            </li>
+              </li>
 
-            <li class="skills-item">
+              <li class="skills-item">
 
-              <div class="title-wrapper">
-                <h5 class="h5">Javascript/Jquery</h5>
-                <data value="100"></data>
-              </div>
+                <div class="title-wrapper">
+                  <h5 class="h5">Javascript/Jquery</h5>
+                  <data value="100"></data>
+                </div>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 100%;"></div>
-              </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 100%;"></div>
+                </div>
 
-            </li>
+              </li>
 
-            <li class="skills-item">
+              <li class="skills-item">
 
-              <div class="title-wrapper">
-                <h5 class="h5">Git/Github/(CI/CD Pipeline)</h5>
-                <data value="100"></data>
-              </div>
+                <div class="title-wrapper">
+                  <h5 class="h5">Git/Github/(CI/CD Pipeline)</h5>
+                  <data value="100"></data>
+                </div>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 100%;"></div>
-              </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 100%;"></div>
+                </div>
 
-            </li>
-          </ul>
+              </li>
+            </ul>
 
-        </section>
+          </section>
 
-      </article>
+        </article>
 
 
 
 
 
-      <!--
+        <!--
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
+        <article class="portfolio" data-page="portfolio">
 
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
 
-        <section class="projects">
+          <section class="projects">
 
-          <ul class="filter-list">
+            <ul class="filter-list">
 
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
 
-            <!-- <li class="filter-item">
+              <!-- <li class="filter-item">
               <button data-filter-btn>Web development</button>
             </li>
 
@@ -783,31 +844,31 @@
               <button data-filter-btn>Applications</button>
             </li> -->
 
-            <!-- <li class="filter-item">
+              <!-- <li class="filter-item">
               <button data-filter-btn>Web development</button>
             </li> -->
 
-          </ul>
+            </ul>
 
-          <div class="filter-select-box">
+            <div class="filter-select-box">
 
-            <button class="filter-select" data-select>
+              <button class="filter-select" data-select>
 
-              <div class="select-value" data-selecct-value>Select category</div>
+                <div class="select-value" data-selecct-value>Select category</div>
 
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
 
-            </button>
+              </button>
 
-            <ul class="select-list">
+              <ul class="select-list">
 
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
 
-              <!-- <li class="select-item">
+                <!-- <li class="select-item">
                 <button data-select-item>Web design</button>
               </li>
 
@@ -819,140 +880,140 @@
                 <button data-select-item>Web development</button>
               </li> -->
 
+              </ul>
+
+            </div>
+
+            <ul class="project-list">
+
+              <li class="project-item  active" data-filter-item data-category="web development">
+                <a href="#">
+
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img src="https://volvein.github.io/cvtest/Untitled.png" style="height:194px;" alt="finance"
+                      loading="lazy">
+                  </figure>
+
+                  <h3 class="project-title">CMS</h3>
+
+                  <p class="project-category">Javascript/Jquery</p>
+
+                </a>
+              </li>
+
+              <li class="project-item  active" data-filter-item data-category="web development">
+                <a href="#">
+
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img src="https://volvein.github.io/cvtest/Untitled1.png" style="height:194px;" alt="orizon"
+                      loading="lazy">
+                  </figure>
+
+                  <h3 class="project-title">SmokeNVibes.in</h3>
+
+                  <p class="project-category">ReactJs & .Net Framework</p>
+
+                </a>
+              </li>
+
+              <li class="project-item  active" data-filter-item data-category="web design">
+                <a href="#">
+
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img src="https://volvein.github.io/cvtest/Untitled2.png" style="height:194px;" alt="fundo"
+                      loading="lazy">
+                  </figure>
+
+                  <h3 class="project-title">State Api</h3>
+
+                  <p class="project-category">.Net Core WebApi</p>
+
+                </a>
+              </li>
+
+              <li class="project-item  active" data-filter-item data-category="applications">
+                <a href="#">
+
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img src="./assets/images/img.jpeg" style="height:194px;" alt="brawlhalla" loading="lazy">
+                  </figure>
+
+                  <h3 class="project-title">Yo Speech</h3>
+
+                  <p class="project-category">Google Bard & voice synthesis</p>
+
+                </a>
+              </li>
+
+              <li class="project-item  active" data-filter-item data-category="web design">
+                <a href="#">
+
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="https://user-images.githubusercontent.com/33335169/57837030-c5ce7900-7776-11e9-8195-81ffbb1b51fd.png"
+                      style="height:194px;" alt="dsm." loading="lazy">
+                  </figure>
+
+                  <h3 class="project-title">Cubebox Game.</h3>
+
+                  <p class="project-category">Unity Engine (Windows)</p>
+
+                </a>
+              </li>
+
+              <li class="project-item  active" data-filter-item data-category="web design">
+                <a href="#">
+
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img src="./assets/images/img1.jpeg" style="height:194px;" alt="brawlhalla" loading="lazy">
+                  </figure>
+
+                  <h3 class="project-title">School management system</h3>
+                  <p class="project-category">Windows Plateform</p>
+
+                </a>
+              </li>
+
+
             </ul>
 
-          </div>
+          </section>
 
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="https://volvein.github.io/cvtest/Untitled.png" style="height:194px;" alt="finance"
-                    loading="lazy">
-                </figure>
-
-                <h3 class="project-title">CMS</h3>
-
-                <p class="project-category">Javascript/Jquery</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="https://volvein.github.io/cvtest/Untitled1.png" style="height:194px;" alt="orizon"
-                    loading="lazy">
-                </figure>
-
-                <h3 class="project-title">SmokeNVibes.in</h3>
-
-                <p class="project-category">ReactJs & .Net Framework</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="https://volvein.github.io/cvtest/Untitled2.png" style="height:194px;" alt="fundo"
-                    loading="lazy">
-                </figure>
-
-                <h3 class="project-title">State Api</h3>
-
-                <p class="project-category">.Net Core WebApi</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/img.jpeg" style="height:194px;" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Yo Speech</h3>
-
-                <p class="project-category">Google Bard & voice synthesis</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img
-                    src="https://user-images.githubusercontent.com/33335169/57837030-c5ce7900-7776-11e9-8195-81ffbb1b51fd.png"
-                    style="height:194px;" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Cubebox Game.</h3>
-
-                <p class="project-category">Unity Engine (Windows)</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/img1.jpeg" style="height:194px;" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">School management system</h3>
-                <p class="project-category">Windows Plateform</p>
-
-              </a>
-            </li>
-
-
-          </ul>
-
-        </section>
-
-      </article>
+        </article>
 
 
 
 
 
-      <!--
+        <!--
         - #BLOG
       -->
 
-      <!-- <article class="blog" data-page="blog">
+        <!-- <article class="blog" data-page="blog">
 
         <header>
           <h2 class="h2 article-title">Blog</h2>
@@ -1140,66 +1201,80 @@
 
 
 
-      <!--
+        <!--
         - #CONTACT
       -->
 
-      <article class="contact" data-page="contact">
+        <article class="contact" data-page="contact">
 
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
 
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Jaipur+(Jaipur)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Jaipur+(Jaipur)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                width="400" height="300" loading="lazy"></iframe>
+            </figure>
+          </section>
 
-        <section class="contact-form">
+          <section class="contact-form">
 
-          <h3 class="h3 form-title">Contact Form</h3>
+            <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="https://formsubmit.co/lokendrash7@gmail.com" method="POST" class="form" data-form>
-            <input type="hidden" name="_next" value="https://volvein.github.io/personal-portfolio/Thanks.html">
-            <input type="hidden" name="_captcha" value="false">
-            <div class="input-wrapper">
-              <input id="name" type="text" name="name" class="form-input" placeholder="Full name" required data-form-input>
-              
-              <input id="email" type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
+            <form action="https://formsubmit.co/lokendrash7@gmail.com" method="POST" class="form" data-form>
+              <input type="hidden" name="_next" value="https://loken.me/Thanks.html">
+              <input type="hidden" name="_captcha" value="false">
+              <div class="input-wrapper">
+                <input id="name" type="text" name="name" class="form-input" placeholder="Full name" required
+                  data-form-input>
 
-            <textarea id="subject" name="subject" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+                <input id="email" type="email" name="email" class="form-input" placeholder="Email address" required
+                  data-form-input>
+              </div>
 
-            <button class="form-btn" type="submit" data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-            <input type="hidden" name="_autoresponse" value="Sumbit">
-          </form>
+              <textarea id="subject" name="subject" class="form-input" placeholder="Your Message" required
+                data-form-input></textarea>
 
-        </section>
+              <button class="form-btn" type="submit" data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+              <input type="hidden" name="_autoresponse" value="Sumbit">
+            </form>
 
-      </article>
+          </section>
 
-    </div>
+        </article>
 
-  </main>
+      </div>
 
-
-
-
+    </main>
 
 
-  <!--
+
+
+
+    <script>
+      var myVar;
+
+      function myFunction() {
+        myVar = setTimeout(showPage, 3000);
+      }
+
+      function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("myDiv").style.display = "block";
+      }
+    </script>
+    <!--
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 
