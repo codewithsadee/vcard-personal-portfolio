@@ -344,6 +344,11 @@ main {
   margin-bottom: 10px;
 }
 
+.name {
+  overflow: hidden;
+  overflow-wrap: break-word;
+}
+
 .info-content .title {
   color: var(--white-1);
   background: var(--onyx);
