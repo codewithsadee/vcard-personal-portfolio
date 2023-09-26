@@ -1880,3 +1880,18 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+/* Footer */
+footer {
+  height: 27px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(152, 150, 150);
+  align-items: center;
+  padding: 10px 10px;
+  color: white;
+  font-size: 17px;
+}
