@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><Label>Lokendra</Label></title>
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    .mapbox1 {
+  position: relative;
+  height: 250px;
+  width: max-content;
+  justify-content: center;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  border: 1px solid var(--jet);
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mapbox1 figure { height: 100%; }
+
+.mapbox1 iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+  </style>
+</head>
+
+<body>
+  <main>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <article class="contact active" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Thank You</h2>
+        </header>
+
+        <section class="mapbox1" data-mapbox>
+            <iframe
+              src="https://media.tenor.com/OZ1mvvyRSvIAAAAC/thank-you-namaste.gif"
+              width="400" height="300" loading="lazy"></iframe>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">I will contact ASAP!!</h3>          
+
+          <button onclick="form1()" class="form-btn" data-form-btn>
+            <ion-icon name="paper-plane"></ion-icon>
+            <span>Back to Home Page</span>
+          </button>
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <!-- <script src="./assets/js/script.js"></script> -->
+
+  <!--
+    - ionicon link
+  -->
+  <script>
+    function form1() {
+      console.log("clicked");
+      window.location.href = "/index.html";
+    }
+  </script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
