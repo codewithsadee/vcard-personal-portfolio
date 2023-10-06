@@ -771,6 +771,11 @@ main {
  * education and experience 
  */
 
+ .bulletPoints {
+  list-style-type: disc;
+  color: var(--light-gray);
+ }
+
 .timeline { margin-bottom: 30px; }
 
 .timeline .title-wrapper {
