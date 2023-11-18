@@ -1,20 +1,20 @@
 name: Deploy Website
 
-on:
+on:  # Specifies the event that triggers the workflow
   push:
-    branches:
-      - master
-
+    branches: [ "master" ]  # Triggers on push to the master branch
+  pull_request:
+    branches: [ "master" ]  # Triggers on pull requests to the master branch
 
 jobs:
-  build:
+  build:  # Job name
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest  # Specifies the runner environment
 
-    steps:
-    - uses: actions/checkout@v3
-    - name: Build the site in the jekyll/builder container
-      run: |
-        docker run \
-        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-        jekyll/builder:4.2.0 /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future --incremental"
+    steps:  # Steps to execute in the job
+    - uses: actions/checkout@v3  # Checks out the repository code
+    - name: Build the site in the jekyll/builder container  # Step name
+      run: |  # Run command in the shell
+        docker run \  # Runs a Docker container
+        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \  # Mounts volumes
+        jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"  # Runs Jekyll build command
