@@ -1,0 +1,43 @@
+# This GitHub Actions workflow is for reporting the build status of a personal homepage.
+
+# Define the name of the workflow
+name: personal homepage
+
+# Trigger the workflow when changes are pushed to the master branch
+on:
+  push:
+    branches:
+      - master
+
+# Define the jobs to be executed in the workflow
+jobs:
+  # Define a job named 'report-build-status' to run on the 'ubuntu-latest' environment
+  report-build-status:
+    runs-on: ubuntu-latest
+
+    # Define the steps to be executed in the job
+    steps:
+      # Step 1: Check out the repository code
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      # Step 2: Set up Node.js environment
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+
+      # Step 3: Install project dependencies
+      - name: Install Dependencies
+        run: npm install
+
+      # Step 4: Run the build process
+      - name: Run Build
+        run: npm run build
+
+      # Step 5: Report the build status using GitHub API
+      - name: Report Build Status
+        run: gh api -X POST "repos/hwang-hyesung/hwang-hyesung.github.io/pages/telemetry" "{}"
+        env:
+          # Use the GitHub token to authenticate API requests
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
