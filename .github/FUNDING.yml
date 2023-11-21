@@ -1,3 +1,32 @@
 # These are supported funding model platforms
 
-patreon: codewithsadee # Replace with a single Patreon username
+name: personal homepage
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  report-build-status:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '14'
+
+    - name: Install Dependencies
+      run: npm install
+
+    - name: Run Build
+      run: npm run build
+
+    - name: Report Build Status
+      run: gh api -X POST "repos/hwang-hyesung/hwang-hyesung.github.io/pages/telemetry" "{}"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
