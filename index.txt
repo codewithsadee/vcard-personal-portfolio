@@ -2,23 +2,23 @@ vCard - Personal Portfolio
 
 # sidebar
 
-alt = Richard hanrick
-Richard hanrick
-Web developer
+alt = Nick Ross
+Nick Ross
+Data Scientist
 
 Show Contacts
 
 Email
-richard@example.com
+nickdavidross@gmail.com
 
 Phone
 +1 (213) 352-2795
 
 Birthday
-June 23, 1982
+10 February
 
 Location
-Sacramento, California, USA
+London, UK
 
 # navbar
 
