@@ -332,7 +332,7 @@ main {
 }
 
 .avatar-box {
-  background: var(--bg-gradient-yellow-1);
+  background: var(--text-gradient-yellow);
   border-radius: 50%;
 }
 
