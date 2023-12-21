@@ -797,6 +797,13 @@ main {
   margin-bottom: 7px;
 }
 
+.timeline-item-subtitle {
+  color: var(--light-gray);
+  font-size: var(--fs-5);
+  line-height: 1.3;
+  margin-bottom: 7px;
+}
+
 .timeline-list span {
   color: var(--dark-baby-blue);
   font-weight: var(--fw-400);
