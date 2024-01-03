@@ -129,6 +129,8 @@
 
 a { text-decoration: none; }
 
+li { list-style: none; }
+
 img, ion-icon, a, button, time, span { display: block; }
 
 button {
@@ -841,9 +843,9 @@ ul {
   color: var(--light-gray);
   font-weight: var(--fw-300);
   line-height: 1.6;
+  margin-left: 2em;
   list-style-type: circle;
   display: list-item
-  padding-left: 40px;
 }
 
 /**
