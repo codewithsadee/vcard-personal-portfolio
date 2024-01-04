@@ -844,7 +844,6 @@ ul.bullet {
   font-weight: var(--fw-300);
   line-height: 1.6;
   list-style-type: circle;
-  list-style-position: inside;
   display: list-item
 }
 
