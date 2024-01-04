@@ -843,8 +843,8 @@ ul.bullet {
   color: var(--light-gray);
   font-weight: var(--fw-300);
   line-height: 1.6;
-  margin-left: 2em;
   list-style-type: circle;
+  list-style-position: inside;
   display: list-item
 }
 
