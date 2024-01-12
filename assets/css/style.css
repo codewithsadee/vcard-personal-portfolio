@@ -1011,6 +1011,7 @@ main {
 
 .project-title,
 .project-category { margin-left: 10px; }
+.project-description { margin-left: 15px; }
 
 .project-title {
   color: var(--white-2);
@@ -1022,7 +1023,12 @@ main {
 
 .project-category {
   color: var(--light-gray-70);
-  font-size: var(--fs-6);
+  font-size: var(--fs-4);
+  font-weight: var(--fw-200);
+}
+.project-description {
+  color: var(--light-gray);
+  font-size: var(--fs-8);
   font-weight: var(--fw-300);
 }
 
@@ -1879,4 +1885,46 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .timeline-text { max-width: 700px; }
 
+}
+/**
+ * # image modal dialog
+ */
+
+/* Included in the Chrome user agent styles  */
+/* https://github.com/codewithsadee/vcard-personal-portfolio/pull/21/
+..commits/aeb7f44a405cb66ce5fd650fdb933603eee12971 */
+dialog::backdrop {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background-color: rgba(0, 0, 0, 0.6);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/* Style the dialog box */
+.modal-dialog {
+background-color: #fff;
+border-radius: 5px;
+width: 800px;
+max-height: 800px;
+box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+position: fixed;
+left: 50%;
+right: 50%;
+transform: translate(-50%, 25%);
+}
+
+/* Style the close button */
+.modal-close {
+position: absolute;
+top: 10px;
+right: 10px;
+cursor: pointer;
+}
+.modal-img {
+object-fit: contain;
+width: 100%;
 }
