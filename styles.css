@@ -1,7 +1,6 @@
 /* styles.css */
-.timeline-image {
-    width: 30px; /* Set the desired width */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 10px; /* Add some spacing between the image and text */
-    /*border-radius: 50%; /* Make the image round (optional) */
+.mini-image {
+    width: 20px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+    margin-right: 10px; /* Adjust the spacing between the image and text */
   }
