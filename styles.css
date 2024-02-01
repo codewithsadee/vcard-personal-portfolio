@@ -1,11 +1,11 @@
 /* styles.css */
-.mini-image {
-    width: 50px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 10px; /* Adjust the spacing between the image and text */
+.content-container {
+    display: flex;
+    align-items: center; /* Center items vertically */
   }
   
-  .text-content {
-    display: inline-block;
-    vertical-align: top; /* Align the text content to the top of the image */
+  .mini-image {
+    width: 30px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Adjust the spacing between the image and text */
   }
