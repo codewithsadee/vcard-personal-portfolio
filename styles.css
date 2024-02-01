@@ -10,4 +10,5 @@
   width: 20px; /* Set the width as needed */
   height: auto; /* Maintain aspect ratio */
   margin-right: 10px; /* Adjust the spacing between the image and text */
+  margin-top: -5px; /* Adjust the negative margin to move the image up */
 }
