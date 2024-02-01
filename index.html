@@ -1127,16 +1127,19 @@
             <h3 class="h3 form-title">Contact Form</h3>
 
             <form action="https://docs.google.com/forms/d/e/1FAIpQLScpkTnFWIhwEF9BG72c4mh1X76UX5aF5wIN6SMFPby-21Qo8Q/formResponse?"
-                  target="_self" method="POST" id="mG61Hd"
-                  name="EmailForm" class="form" data-form>
+                target="_self" method="POST" id="mG61Hd"
+                name="EmailForm" class="form" data-form>
 
                 <div class="input-wrapper">
-                    <input type="text" name="entry.1291919632" class="form-input" placeholder="Full name" required data-form-input>
+                    <input type="text" name="entry.1291919632" class="form-input" placeholder="Full name" required
+                        data-form-input>
 
-                    <input type="email" name="entry.813174564" class="form-input" placeholder="Email address" required data-form-input>
+                    <input type="email" name="entry.813174564" class="form-input" placeholder="Email address"
+                        required data-form-input>
                 </div>
 
-                <textarea name="entry.38771318" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+                <textarea name="entry.38771318" class="form-input" placeholder="Your Message" required
+                    data-form-input></textarea>
 
                 <button class="form-btn" type="submit" disabled data-form-btn>
                     <ion-icon name="paper-plane"></ion-icon>
@@ -1148,46 +1151,46 @@
 
     </article>
 
+    <!-- Your other HTML content goes here -->
+
+    <!-- JavaScript code -->
     <script>
-      document.addEventListener('DOMContentLoaded', function () {
-          // Enable the button when the form is filled out
-          var form = document.querySelector('[data-form]');
-          var submitButton = document.querySelector('[data-form-btn]');
+        document.addEventListener('DOMContentLoaded', function () {
+            // Enable the button when the form is filled out
+            var form = document.querySelector('[data-form]');
+            var submitButton = document.querySelector('[data-form-btn]');
 
-          form.addEventListener('input', function () {
-              var inputs = form.querySelectorAll('[data-form-input]');
-              var isFormValid = true;
+            form.addEventListener('input', function () {
+                var inputs = form.querySelectorAll('[data-form-input]');
+                var isFormValid = true;
 
-              inputs.forEach(function (input) {
-                  if (!input.value.trim()) {
-                      isFormValid = false;
-                  }
-              });
+                inputs.forEach(function (input) {
+                    if (!input.value.trim()) {
+                        isFormValid = false;
+                    }
+                });
 
-              submitButton.disabled = !isFormValid;
-          });
+                submitButton.disabled = !isFormValid;
+            });
 
-        // Handle form submission
-        form.addEventListener('submit', function (event) {
-            // Optionally, you can perform additional validation or actions before submission
-            // ...
+            // Handle form submission
+            form.addEventListener('submit', function (event) {
+                // Optionally, you can perform additional validation or actions before submission
+                // ...
 
-            // Prevent the default form submission behavior
-            event.preventDefault();
-
-            // You can add your own logic here, e.g., display a success message
-            console.log('Form submitted successfully!');
-
-            // Optionally, you can redirect back to the main page or perform other actions
-            // For example, you can use window.location.href to redirect to another page
-            window.location.href = 'https://jaylincabrera10.github.io';
-
-            // If you don't want any redirection, you can remove the window.location.href line
+                // Let the form proceed with the default behavior
+                return true;
+            });
         });
-    });
-</script>
+    </script>
 
-    
+    <script type="text/javascript">
+      $('form[data-form]').on('submit', function (e) {
+          $(this).fadeOut(2000);
+          $(this).prepend('Your submission has been processed...');
+      });
+    </script>
+
   </div>
 
 </main>
@@ -1196,6 +1199,8 @@
   - custom js link
 -->
 <script src="./assets/js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
 
 <!--
   - ionicon link
