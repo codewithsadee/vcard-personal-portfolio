@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selim YILDIZ - Resume</title>
+    <title>Selim YILDIZ - Contact</title>
 
     <!--
       - favicon
@@ -183,7 +183,7 @@
                     </li>
 
                     <li class="navbar-item">
-                        <a href="resume.html" class="navbar-link active">Resume</a>
+                        <a href="resume.html" class="navbar-link">Resume</a>
                     </li>
 
                     <li class="navbar-item">
@@ -191,160 +191,107 @@
                     </li>
 
                     <li class="navbar-item">
-                        <a href="#" class="navbar-link">Contact</a>
+                        <a href="#" class="navbar-link active">Contact</a>
                     </li>
+
+
                 </ul>
 
             </nav>
 
-            <!--
-        - #RESUME
+<!--
+        - #CONTACT
       -->
 
-            <article class="resume" data-page="resume">
+      <article class="contact active" data-page="contact">
 
-                <header>
-                    <h2 class="h2 article-title">Resume</h2>
-                </header>
+        <header>
+            <h2 class="h2 article-title">Contact</h2>
+        </header>
 
-                <section class="timeline">
+        <section class="contact-form">
 
-                    <div class="title-wrapper">
-                        <div class="icon-box">
-                            <ion-icon name="book-outline"></ion-icon>
-                        </div>
+            <h3 class="h3 form-title">Contact Form</h3>
 
-                        <h3 class="h3">Education</h3>
-                    </div>
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLScpkTnFWIhwEF9BG72c4mh1X76UX5aF5wIN6SMFPby-21Qo8Q/formResponse?"
+                target="_self" method="POST" id="mG61Hd"
+                name="EmailForm" class="form" data-form>
 
-                    <ol class="timeline-list">
+                <div class="input-wrapper">
+                    <input type="text" name="entry.1291919632" class="form-input" placeholder="Full name" required
+                        data-form-input>
 
-                        <li class="timeline-item">
+                    <input type="email" name="entry.813174564" class="form-input" placeholder="Email address"
+                        required data-form-input>
+                </div>
 
-                            <h4 class="h4 timeline-item-title">Georgia Institute of Technology, Atlanta, GA</h4>
+                <textarea name="entry.38771318" class="form-input" placeholder="Your Message" required
+                    data-form-input></textarea>
 
-                            <span>2023 — Present</span>
+                <button class="form-btn" type="submit" disabled data-form-btn>
+                    <ion-icon name="paper-plane"></ion-icon>
+                    <span>Send Message</span>
+                </button>
 
-                            <p class="timeline-text">
-                                M.S. in Cybersecurity, Information Security Track
-                            </p>
+            </form>
+        </section>
 
-                        </li>
+    </article>
 
-                        <li class="timeline-item">
+    <!-- Your other HTML content goes here -->
 
-                            <h4 class="h4 timeline-item-title">New Jersey Insitute of Technology, Newark, NJ</h4>
+    <!-- JavaScript code -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Enable the button when the form is filled out
+            var form = document.querySelector('[data-form]');
+            var submitButton = document.querySelector('[data-form-btn]');
 
-                            <span>2019 — 2023</span>
+            form.addEventListener('input', function () {
+                var inputs = form.querySelectorAll('[data-form-input]');
+                var isFormValid = true;
 
-                            <p class="timeline-text">
-                                B.S. in Information Technology, with a specialization in Network and Information
-                                Security
-                            </p>
+                inputs.forEach(function (input) {
+                    if (!input.value.trim()) {
+                        isFormValid = false;
+                    }
+                });
 
-                        </li>
-                    </ol>
+                submitButton.disabled = !isFormValid;
+            });
 
-                </section>
+            // Handle form submission
+            form.addEventListener('submit', function (event) {
+                // Optionally, you can perform additional validation or actions before submission
+                // ...
 
-                <section class="timeline">
+                // Let the form proceed with the default behavior
+                return true;
+            });
+        });
+    </script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script type="text/javascript">
+      $('form[data-form]').on('submit', function (e) {
+          $(this).fadeOut(2000);
+          $(this).prepend('Your submission has been processed...');
+      });
+    </script>
 
-                    <div class="title-wrapper">
-                        <div class="icon-box">
-                            <ion-icon name="book-outline"></ion-icon>
-                        </div>
+  </div>
 
-                        <h3 class="h3">Experience</h3>
-                    </div>
+</main>
 
-                    <ol class="timeline-list">
+<!--
+  - custom js link
+-->
+<script src="./assets/js/script.js"></script>
 
-                        <li class="timeline-item">
-
-                            <h4 class="h4 timeline-item-title">ServiceNow - San Francisco, CA</h4>
-                            <h5 class="h5 timeline-item-subtitle">Associate Information Security Analyst</h4>
-                                <span>June 2023 — Present</span>
-
-                                <p class="timeline-text">
-                                    Add bullet points here.
-                                </p>
-
-                        </li>
-
-                        <li class="timeline-item">
-
-                            <h4 class="h4 timeline-item-title">Jefferiesss - Jersey City, NJ</h4>
-                            <h5 class="h5 timeline-item-subtitle">Security Operations Intern</h4>
-                                <span>September 2022— May 2023</span>
-
-                                <p class="timeline-text">
-                                    Add bullet points here.
-                                </p>
-
-                        </li>
-
-                        <li class="timeline-item">
-
-                            <h4 class="h4 timeline-item-title">ServiceNow - Santa Clara, CA</h4>
-                            <h5 class="h5 timeline-item-subtitle">Information Security Analyst Intern</h4>
-                                <span>June 2022 — September 2022</span>
-
-                                <p class="timeline-text">
-                                    Add bullet points here.
-                                </p>
-
-                        </li>
-
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">Tesla - Fremont, CA</h4>
-                            <h5 class="h5 timeline-item-subtitle">IT Operations Intern</h5>
-                            <span>September 2021 — December 2021</span>
-                            <p class="timeline-text">
-                                Add bullet points here.
-                            </p>
-                        </li>
-
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">Google - AAAustin, NJ (Remote)</h4>
-                            <h5 class="h5 timeline-item-subtitle">IT Intern</h5>
-                            <span>June 2021 — August 2021</span>
-                            <p class="timeline-text">
-                                Add bullet points here.
-                            </p>
-                        </li>
-
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">PKF O'Connor Davies, LLP - Woodcliff Lake, NJ</h4>
-                            <h5 class="h5 timeline-item-subtitle">IT Support Intern</h5>
-                            <span>September 2020 — April 2021</span>
-                            <p class="timeline-text">
-                                Add bullet points here.
-                            </p>
-                        </li>
-
-                    </ol>
-
-            </article>
-
-        </div>
-
-    </main>
-
-
-
-
-
-
-    <!--
-      - custom js link
-    -->
-    <script src="./assets/js/script.js"></script>
-
-    <!--
-      - ionicon link
-    -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<!--
+  - ionicon link
+-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 
