@@ -1,10 +1,21 @@
 /* styles.css */
-.content-container {
+.content-container-google {
     display: flex;
     align-items: center; /* Center items vertically */
   }
   
-  .mini-image {
+  .mini-image-google {
+    width: 30px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Adjust the spacing between the image and text */
+  }
+
+  .content-container-tesla {
+    display: flex;
+    align-items: center; /* Center items vertically */
+  }
+  
+  .mini-image-tesla {
     width: 30px; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
     margin-right: 10px; /* Adjust the spacing between the image and text */
