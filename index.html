@@ -582,41 +582,31 @@
             </li>
 
             <li class="timeline-item">
-                <div class="text-content">
                   <h4 class="h4 timeline-item-title">Tesla - Fremont, CA</h4>
                   <h5 class="h5 timeline-item-subtitle">IT Operations Intern</h5>
                   <span>September 2021 — December 2021</span>
                   <p class="timeline-text">
                     Add bullet points here.
                   </p>
-                </div>
-              </div>
             </li>
           
             <li class="timeline-item">
-                <div class="text-content">
-                  <h4 class="h4 timeline-item-title">Google - Austin, NJ (Remote)</h4>
+                  <h4 class="h4 timeline-item-title">Google - AAAustin, NJ (Remote)</h4>
                   <h5 class="h5 timeline-item-subtitle">IT Intern</h5>
                   <span>June 2021 — August 2021</span>
                   <p class="timeline-text">
                     Add bullet points here.
                   </p>
-                </div>
-              </div>
             </li>
 
             <li class="timeline-item">
-              <div class="text-content">
                 <h4 class="h4 timeline-item-title">PKF O'Connor Davies, LLP - Woodcliff Lake, NJ</h4>
                 <h5 class="h5 timeline-item-subtitle">IT Support Intern</h5>
                 <span>September 2020 — April 2021</span>
                 <p class="timeline-text">
                   Add bullet points here.
                 </p>
-              </div>
-            </div>
-          </li>
-
+              </li>
 
           </ol>
 
@@ -1171,28 +1161,50 @@
         </header>
 
         <section class="contact-form">
-
-            <h3 class="h3 form-title">Contact Form</h3>
-
-            <form action="https://docs.google.com/forms/d/e/1FAIpQLScpkTnFWIhwEF9BG72c4mh1X76UX5aF5wIN6SMFPby-21Qo8Q/formResponse?"
-                  target="_self" method="POST" id="mG61Hd"
-                  name="EmailForm" class="form" data-form>
-
-                <div class="input-wrapper">
-                    <input type="text" name="entry.1291919632" class="form-input" placeholder="Full name" required data-form-input>
-
-                    <input type="email" name="entry.813174564" class="form-input" placeholder="Email address" required data-form-input>
-                </div>
-
-                <textarea name="entry.38771318" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-                <button class="form-btn" type="submit" disabled data-form-btn>
-                    <ion-icon name="paper-plane"></ion-icon>
-                    <span>Send Message</span>
-                </button>
-
-            </form>
-        </section>
+          <h3 class="h3 form-title">Contact Form</h3>
+          <form action="https://docs.google.com/forms/d/e/1FAIpQLScpkTnFWIhwEF9BG72c4mh1X76UX5aF5wIN6SMFPby-21Qo8Q/formResponse?" target="_self" method="POST" id="mG61Hd" name="EmailForm" class="form" data-form>
+              <div class="input-wrapper">
+                  <input type="text" name="entry.1291919632" class="form-input" placeholder="Full name" required data-form-input>
+                  <input type="email" name="entry.813174564" class="form-input" placeholder="Email address" required data-form-input>
+              </div>
+              <textarea name="entry.38771318" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+              <button class="form-btn" type="button" disabled data-form-btn>
+                  <ion-icon name="paper-plane"></ion-icon>
+                  <span>Send Message</span>
+              </button>
+          </form>
+      
+          <script>
+              document.addEventListener('DOMContentLoaded', function () {
+                  // Enable the button when the form is filled out
+                  var form = document.querySelector('[data-form]');
+                  var submitButton = document.querySelector('[data-form-btn]');
+      
+                  form.addEventListener('input', function () {
+                      var inputs = form.querySelectorAll('[data-form-input]');
+                      var isFormValid = true;
+      
+                      inputs.forEach(function (input) {
+                          if (!input.value.trim()) {
+                              isFormValid = false;
+                          }
+                      });
+      
+                      submitButton.disabled = !isFormValid;
+                  });
+      
+                  // Handle form submission
+                  form.addEventListener('submit', function (event) {
+                      // Optionally, you can perform additional validation or actions before submission
+                      // ...
+      
+                      // Submit the form
+                      form.submit();
+                  });
+              });
+          </script>
+      </section>
+      
 
     </article>
 
@@ -1202,11 +1214,6 @@
     </div>
 
   </main>
-
-
-
-
-
 
   <!--
     - custom js link
