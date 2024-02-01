@@ -1,6 +1,11 @@
 /* styles.css */
 .mini-image {
-    width: 20px; /* Adjust the width as needed */
-    height: auto; /* Maintain the aspect ratio */
+    width: 50px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
     margin-right: 10px; /* Adjust the spacing between the image and text */
+  }
+  
+  .text-content {
+    display: inline-block;
+    vertical-align: top; /* Align the text content to the top of the image */
   }
