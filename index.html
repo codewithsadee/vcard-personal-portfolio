@@ -1143,34 +1143,35 @@
             </form>
     
             <script>
-                document.addEventListener('DOMContentLoaded', function () {
-                    // Enable the button when the form is filled out
-                    var form = document.querySelector('[data-form]');
-                    var submitButton = document.querySelector('[data-form-btn]');
-    
-                    form.addEventListener('input', function () {
-                        var inputs = form.querySelectorAll('[data-form-input]');
-                        var isFormValid = true;
-    
-                        inputs.forEach(function (input) {
-                            if (!input.value.trim()) {
-                                isFormValid = false;
-                            }
-                        });
-    
-                        submitButton.disabled = !isFormValid;
-                    });
-    
-                    // Handle form submission
-                    form.addEventListener('submit', function (event) {
-                        // Optionally, you can perform additional validation or actions before submission
-                        // ...
-    
-                        // Submit the form
-                        form.submit();
-                    });
-                });
-            </script>
+              document.addEventListener('DOMContentLoaded', function () {
+                  // Enable the button when the form is filled out
+                  var form = document.querySelector('[data-form]');
+                  var submitButton = document.querySelector('[data-form-btn]');
+          
+                  form.addEventListener('input', function () {
+                      var inputs = form.querySelectorAll('[data-form-input]');
+                      var isFormValid = true;
+          
+                      inputs.forEach(function (input) {
+                          if (!input.value.trim()) {
+                              isFormValid = false;
+                          }
+                      });
+          
+                      submitButton.disabled = !isFormValid;
+                  });
+          
+                  // Handle form submission
+                  form.addEventListener('submit', function (event) {
+                      // Optionally, you can perform additional validation or actions before submission
+                      // ...
+          
+                      // No need to manually submit the form, let it proceed with the default behavior
+                      return true;
+                  });
+              });
+          </script>
+          
         </section>
     </article>
     
