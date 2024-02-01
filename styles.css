@@ -1,8 +1,8 @@
 /* styles.css */
 .content-container-tesla,
 .content-container-google {
-  display: flex;
-  align-items: center;
+  display: inline-flex; /* Use inline-flex to make elements inline */
+  align-items: baseline; /* Align items along the baseline */
 }
 
 .mini-image-tesla,
@@ -10,5 +10,5 @@
   width: 20px; /* Set the width as needed */
   height: auto; /* Maintain aspect ratio */
   margin-right: 10px; /* Adjust the spacing between the image and text */
-  margin-top: -5px; /* Adjust the negative margin to move the image up */
+  vertical-align: middle; /* Align the middle of the image with the text */
 }
