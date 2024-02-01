@@ -559,7 +559,7 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Jefferies - Jersey City, NJ</h4>
+              <h4 class="h4 timeline-item-title">Jefferiesss - Jersey City, NJ</h4>
               <h5 class="h5 timeline-item-subtitle">Security Operations Intern</h4>
               <span>September 2022— May 2023</span>
 
@@ -1167,16 +1167,25 @@
               submitButton.disabled = !isFormValid;
           });
 
-          // Handle form submission
-          form.addEventListener('submit', function (event) {
-              // Optionally, you can perform additional validation or actions before submission
-              // ...
+        // Handle form submission
+        form.addEventListener('submit', function (event) {
+            // Optionally, you can perform additional validation or actions before submission
+            // ...
 
-              // Let the form proceed with the default behavior
-              return true;
-          });
-      });
-  </script>
+            // Prevent the default form submission behavior
+            event.preventDefault();
+
+            // You can add your own logic here, e.g., display a success message
+            console.log('Form submitted successfully!');
+
+            // Optionally, you can redirect back to the main page or perform other actions
+            // For example, you can use window.location.href to redirect to another page
+            window.location.href = 'https://jaylincabrera10.github.io';
+
+            // If you don't want any redirection, you can remove the window.location.href line
+        });
+    });
+</script>
 
     
   </div>
