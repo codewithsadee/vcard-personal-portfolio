@@ -1,0 +1,7 @@
+/* styles.css */
+.timeline-image {
+    width: 30px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add some spacing between the image and text */
+    border-radius: 50%; /* Make the image round (optional) */
+  }
