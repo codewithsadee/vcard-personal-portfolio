@@ -593,6 +593,10 @@ main {
   box-shadow: var(--shadow-1);
 }
 
+.testimonials-avatar-box img {
+  border-radius: 14px;
+}
+
 .testimonials-item-title { margin-bottom: 7px; }
 
 .testimonials-text {
@@ -701,6 +705,10 @@ main {
   border-radius: 14px;
   margin-bottom: 15px;
   box-shadow: var(--shadow-2);
+}
+
+.modal-avatar-box img {
+  border-radius: 14px;
 }
 
 .modal-img-wrapper > img { display: none; }
@@ -1339,7 +1347,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .avatar-box { border-radius: 30px; }
 
-  .avatar-box img { width: 120px; }
+  .avatar-box img { width: 120px; border-radius: 30px;}
 
   .info-content .name { margin-bottom: 15px; }
 
