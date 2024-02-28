@@ -5,7 +5,7 @@
 ![GitHub forks](https://img.shields.io/github/forks/BrianWangila/brian-personal-portfolio?style=social)
 <!-- [![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_) -->
 
-vCard is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript.
+This is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript.
 
 ## Demo
 
