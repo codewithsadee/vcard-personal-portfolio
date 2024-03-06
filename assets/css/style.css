@@ -1880,3 +1880,31 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FDC965;
+  color: #000000;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  background-color: #e5ae4f;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
