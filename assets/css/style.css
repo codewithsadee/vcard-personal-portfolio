@@ -551,7 +551,7 @@ main {
 
 
 /*-----------------------------------*\
-  #RESUME
+  #ABOUT ME
 \*-----------------------------------*/
 
 .article-title { margin-bottom: 30px; }
@@ -617,6 +617,22 @@ main {
   color: var(--light-gray);
   font-weight: var(--fw-300);
   line-height: 1.6;
+}
+
+/**
+ * Scholarships 
+ */
+.parent {
+  border: 1px solid black;
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+.child {
+  display: inline-block;
+  border: 1px solid red;
+  padding: 1rem 1rem;
+  vertical-align: middle;
 }
 
 
@@ -1136,22 +1152,6 @@ main {
   .navbar-link { --fs-8: 15px; }
 
 
-
-  /**
-   * ABOUT
-   */
-
-  /* testimonials modal */
-
-  /* .testimonials-modal {
-    gap: 35px;
-    max-width: 680px;
-  }
-
-  .modal-avatar-box img { width: 80px; }
- */
-
-
   /**
    * PORTFOLIO
    */
@@ -1418,13 +1418,5 @@ main {
   }
 
   .social-list { justify-content: center; }
-
-
-
-  /**
-	 * RESUME
-	 */
-
-  .timeline-text { max-width: 700px; }
 
 }
