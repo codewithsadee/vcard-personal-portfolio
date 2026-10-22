@@ -35,6 +35,12 @@ Windows:
 git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
 ```
 
+## Deploy
+
+To host your own copy on Wasmer Edge, fork this repository and import your fork; the button below opens the Wasmer import page for this repository and does not copy it into your GitHub account.
+
+[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=codewithsadee%2Fvcard-personal-portfolio)
+
 ## Contact
 
 If you want to contact me you can reach me at [Twitter](https://www.x.com/codewithsadee_).
