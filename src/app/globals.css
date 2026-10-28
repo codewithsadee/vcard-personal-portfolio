@@ -2685,7 +2685,7 @@ textarea.form-input::-webkit-resizer {
   }
 }
 
-/* /text: the page that opens Messages for the GitHub profile's Text badge. */
+/* /message: the card /text shows computers, for the GitHub profile's Message me badge. */
 .text-redirect-page {
   margin: 15px 12px;
   margin-bottom: 75px;
