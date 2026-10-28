@@ -2685,6 +2685,37 @@ textarea.form-input::-webkit-resizer {
   }
 }
 
+/* /text: the page that opens Messages for the GitHub profile's Text badge. */
+.text-redirect-page {
+  margin: 15px 12px;
+  margin-bottom: 75px;
+  min-width: 259px;
+  display: flex;
+  justify-content: center;
+}
+
+.text-redirect-panel {
+  width: min(100%, 520px);
+}
+
+.text-redirect__body {
+  margin-top: 20px;
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  line-height: 1.6;
+}
+
+.text-redirect__link {
+  color: var(--orange-yellow-crayola);
+}
+
+.text-redirect__back {
+  display: inline-block;
+  margin-top: 20px;
+  color: var(--light-gray-70);
+  font-size: var(--fs-7);
+}
+
 .dev-settings-page {
   margin: 15px 12px;
   margin-bottom: 75px;
