@@ -21,7 +21,6 @@ export default function TextRedirect({ phone }: { phone: string }) {
                     <a href={smsHref} className="text-redirect__link">
                         {phone}
                     </a>
-                    .
                 </p>
                 <Link href="/" className="text-redirect__back">
                     Back to my portfolio
