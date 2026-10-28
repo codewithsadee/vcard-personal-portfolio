@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import TextRedirect from "@/components/TextRedirect";
 import { profile } from "@/lib/data";
 
-// /text opens a new text message to me. GitHub strips sms: links from READMEs,
-// so the "Text" badge on my GitHub profile links here instead.
+// Where /text sends computers: a card with my number that also tries to open
+// Messages, since a Mac can text too.
 export const metadata: Metadata = {
-    title: `Text ${profile.name}`,
+    title: `Message ${profile.name}`,
     robots: { index: false, follow: false },
 };
 
-export default function TextPage() {
+export default function MessagePage() {
     return <TextRedirect phone={profile.phone} />;
 }
