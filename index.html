@@ -125,11 +125,11 @@
             <p class="line r"><span class="en">A multi-tenant, E2B-compatible sandbox service, also offered on its own: point the official SDK at it and the core flows run.</span><span class="zh">兼容 E2B 协议的多租户沙箱服务：官方 SDK 换地址和凭证即可跑通核心流程，也可独立对外提供。</span></p>
             <ul>
               <li class="r"><span class="en">Per-template warm pools bring sandbox acquisition down to milliseconds.</span><span class="zh">按模板预热，沙箱认领降到毫秒级。</span></li>
-              <li class="r"><span class="en">JuiceFS mounts object storage as the working directory, so uploading and viewing files never needs the sandbox to start.</span><span class="zh">以 JuiceFS 将对象存储挂载为沙箱工作目录：上传、查看文件等操作直连 JuiceFS，无需启动沙箱。</span></li>
+              <li class="r"><span class="en">JuiceFS mounts object storage as the working directory; uploads and file views never start the sandbox.</span><span class="zh">以 JuiceFS 将对象存储挂载为沙箱工作目录：上传、查看文件等操作直连 JuiceFS，无需启动沙箱。</span></li>
               <li class="r"><span class="en">Pause and resume: a paused sandbox keeps its files.</span><span class="zh">暂停与恢复：沙箱可暂停，恢复时保留文件状态。</span></li>
               <li class="r"><span class="en">Custom templates: derive one from a base image and add your own dependencies.</span><span class="zh">自定义沙箱模板：从基础镜像派生、装上自己的依赖，不只用预置模板。</span></li>
               <li class="r"><span class="en">Network policy: a new sandbox&#8217;s egress can never exceed what its project allows; deny by default.</span><span class="zh">网络策略：建沙箱时校验其出网范围不超过项目允许的上限，默认拒绝、按需放行。</span></li>
-              <li class="r"><span class="en">Usage metering: running time and storage per sandbox, recorded in segments and closed daily for billing and quotas.</span><span class="zh">用量计量：分段记录每个沙箱的运行时长与存储用量，每日封账，为计费与配额提供依据。</span></li>
+              <li class="r"><span class="en">Usage metering: running time and storage per sandbox, closed out daily for billing and quotas.</span><span class="zh">用量计量：分段记录每个沙箱的运行时长与存储用量，每日封账，为计费与配额提供依据。</span></li>
             </ul>
           </div>
         </div>
@@ -140,11 +140,11 @@
           <div class="col">
             <p class="meta r"><span class="num">03</span><span class="solo"><span class="en">Built solo, from scratch</span><span class="zh">一人从零建成</span></span></p>
             <h3 id="w3-h" class="r">North Firewall</h3>
-            <p class="line r"><span class="en">An egress firewall built specifically for agents, which can also be deployed on its own as a general egress proxy gateway for other applications.</span><span class="zh">专为 Agent 设计的<span class="nw">出网防火墙</span>，也能单独部署，作为通用的<span class="nw">出网代理网关</span>给其他应用使用。</span></p>
+            <p class="line r"><span class="en">An egress firewall built for agents that also runs on its own as an egress proxy gateway for other apps.</span><span class="zh">专为 Agent 设计的<span class="nw">出网防火墙</span>，也能单独部署，作为通用的<span class="nw">出网代理网关</span>给其他应用使用。</span></p>
             <ul>
-              <li class="r"><span class="en">A transparent, chained forward proxy: the sandbox&#8217;s outbound traffic is handed to the firewall transparently, so agents need no configuration; HTTPS is decrypted with a self-signed CA and audited request by request, and an upstream proxy can be chained in.</span><span class="zh">透明的链式正向代理：沙箱的出网流量被透明转给防火墙，Agent 不用改任何配置；用自签 CA 对 HTTPS 做 MITM 解析，逐个请求审计，还能再串接上游代理。</span></li>
-              <li class="r"><span class="en">Fine-grained egress policy: allow and deny rules per project and per sandbox, by domain (wildcards included), IP range and port; deny by default, with a multi-tenant console, and every refused request gets a clear reason code.</span><span class="zh">细粒度出网策略：按项目、按沙箱分别配置域名（含通配）、IP 网段和端口的放行与拒绝规则，默认拒绝，带多租户管理台；被拒的请求返回明确的原因码。</span></li>
-              <li class="r"><span class="en">Credential isolation with Vault: credentials are injected as placeholders, so agents only ever see the placeholder; the gateway swaps in the real key only after policy allows the request, so real keys never enter the sandbox.</span><span class="zh">凭证隔离 Vault：凭证以占位符注入，Agent 只接触占位符；策略放行后才在网关里换成真实密钥，真密钥不进沙箱。</span></li>
+              <li class="r"><span class="en">A transparent, chained forward proxy: sandbox traffic reaches it with no agent configuration; HTTPS is decrypted with a self-signed CA and audited per request, and an upstream proxy can be chained in.</span><span class="zh">透明的链式正向代理：沙箱的出网流量被透明转给防火墙，Agent 不用改任何配置；用自签 CA 对 HTTPS 做 MITM 解析，逐个请求审计，还能再串接上游代理。</span></li>
+              <li class="r"><span class="en">Fine-grained egress policy: allow and deny rules per project and sandbox by domain (with wildcards), IP range and port; deny by default, a multi-tenant console, and a reason code on every refusal.</span><span class="zh">细粒度出网策略：按项目、按沙箱分别配置域名（含通配）、IP 网段和端口的放行与拒绝规则，默认拒绝，带多租户管理台；被拒的请求返回明确的原因码。</span></li>
+              <li class="r"><span class="en">Credential isolation with Vault: agents only ever see placeholders; the gateway swaps in the real key once policy allows the request, so real keys never enter the sandbox.</span><span class="zh">凭证隔离 Vault：凭证以占位符注入，Agent 只接触占位符；策略放行后才在网关里换成真实密钥，真密钥不进沙箱。</span></li>
             </ul>
           </div>
         </div>
