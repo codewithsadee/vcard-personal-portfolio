@@ -109,7 +109,7 @@
             <h3 id="w1-h" class="r">North Agent Cloud</h3>
             <p class="line r"><span class="en">A platform for building, deploying, and running AI agents.</span><span class="zh">构建、部署和运行 AI Agent 的平台。</span></p>
             <ul>
-              <li class="r"><span class="en">Scheduling, sandbox isolation, egress control, credential custody, elastic scaling, end-to-end tracing.</span><span class="zh">调度编排、沙箱隔离、出网管控、凭证托管、弹性伸缩、全链路追踪。</span></li>
+              <li class="r"><span class="en">Scheduling, sandbox isolation, egress control, credential custody, elastic scaling, end-to-end tracing; it can be deployed fully offline and on-premises, including on Chinese ARM servers.</span><span class="zh">调度编排、沙箱隔离、出网管控、凭证托管、弹性伸缩、全链路追踪；支持离线私有化部署，含国产 ARM 服务器。</span></li>
               <li class="r"><span class="en">Runtime and sandbox are decoupled: long, low-load LLM calls and short, high-load tool execution scale separately. Lazy start and automatic reclamation fit about 10x more sandboxes on the same resources.</span><span class="zh">运行时与沙箱分离：长时低负载的模型调用和短时高负载的工具执行各自伸缩；懒启动加自动回收，让同样的资源承载约 10 倍的沙箱。</span></li>
               <li class="r"><span class="en">The platform’s own built-in features — trajectory analysis, building agents by conversation — are themselves agents running on it.</span><span class="zh">平台内置的轨迹分析、对话式构建 Agent 等功能，本身就是跑在这个平台上的 Agent。</span></li>
             </ul>
@@ -122,10 +122,11 @@
           <div class="col">
             <p class="meta r"><span class="num">02</span><span class="solo"><span class="en">Core developer, shared across teams</span><span class="zh">核心开发，供多方使用</span></span></p>
             <h3 id="w2-h" class="r">North Sandbox</h3>
-            <p class="line r"><span class="en">A multi-tenant sandbox service compatible with the E2B protocol.</span><span class="zh">兼容 E2B 协议的多租户沙箱服务。</span></p>
+            <p class="line r"><span class="en">A multi-tenant sandbox service compatible with the E2B protocol, also offered on its own.</span><span class="zh">兼容 E2B 协议的多租户沙箱服务，也可独立对外提供。</span></p>
             <ul>
               <li class="r"><span class="en">Per-template warm pools bring sandbox acquisition down to milliseconds.</span><span class="zh">按模板预热，沙箱认领降到毫秒级。</span></li>
               <li class="r"><span class="en">JuiceFS mounts object storage as the sandbox’s working directory: uploading and viewing files go straight to JuiceFS, without starting the sandbox.</span><span class="zh">以 JuiceFS 将对象存储挂载为沙箱工作目录：上传、查看文件等操作直连 JuiceFS，无需启动沙箱。</span></li>
+              <li class="r"><span class="en">Custom sandbox templates: derive one from a base image and add your own dependencies, beyond the built-in templates.</span><span class="zh">自定义沙箱模板：从基础镜像派生、装上自己的依赖，不只用预置模板。</span></li>
             </ul>
           </div>
         </div>
@@ -136,10 +137,11 @@
           <div class="col">
             <p class="meta r"><span class="num">03</span><span class="solo"><span class="en">Built solo, from scratch</span><span class="zh">一人从零建成</span></span></p>
             <h3 id="w3-h" class="r">North Firewall</h3>
-            <p class="line r"><span class="en">An egress firewall built specifically for agents, which also runs on its own as a general firewall and proxy.</span><span class="zh">专为 Agent 设计的<span class="nw">出网防火墙</span>，<span class="nw">也能作为</span>通用的<span class="nw">防火墙和代理服务</span><span class="nw">独立使用。</span></span></p>
+            <p class="line r"><span class="en">An egress firewall built specifically for agents, which can also be deployed on its own as a general egress proxy gateway for other applications.</span><span class="zh">专为 Agent 设计的<span class="nw">出网防火墙</span>，也能单独部署，作为通用的<span class="nw">出网代理网关</span>给其他应用使用。</span></p>
             <ul>
-              <li class="r"><span class="en">A transparent, chained forward proxy: iptables intercepts egress traffic transparently, and CA injection with MITM decrypts and audits HTTPS requests.</span><span class="zh">透明的链式正向代理：iptables 透明拦截出网流量，CA 注入与 MITM 解析、审计 HTTPS 请求。</span></li>
-              <li class="r"><span class="en">Credential isolation with Vault: credentials are injected as placeholders, so agents only ever see the placeholder and the exposure surface shrinks to a single gateway.</span><span class="zh">凭证隔离 Vault：凭证以占位符注入，Agent 只接触占位符，泄露面收敛到单一网关。</span></li>
+              <li class="r"><span class="en">A transparent, chained forward proxy: the sandbox&#8217;s outbound traffic is handed to the firewall transparently, so agents need no configuration; HTTPS is decrypted with a self-signed CA and audited request by request, and an upstream proxy can be chained in.</span><span class="zh">透明的链式正向代理：沙箱的出网流量被透明转给防火墙，Agent 不用改任何配置；用自签 CA 对 HTTPS 做 MITM 解析，逐个请求审计，还能再串接上游代理。</span></li>
+              <li class="r"><span class="en">Fine-grained egress policy: allow and deny rules per project and per sandbox, by domain (wildcards included), IP range and port; deny by default, with a multi-tenant console, and every refused request gets a clear reason code.</span><span class="zh">细粒度出网策略：按项目、按沙箱分别配置域名（含通配）、IP 网段和端口的放行与拒绝规则，默认拒绝，带多租户管理台；被拒的请求返回明确的原因码。</span></li>
+              <li class="r"><span class="en">Credential isolation with Vault: credentials are injected as placeholders, so agents only ever see the placeholder; the gateway swaps in the real key only after policy allows the request, so real keys never enter the sandbox.</span><span class="zh">凭证隔离 Vault：凭证以占位符注入，Agent 只接触占位符；策略放行后才在网关里换成真实密钥，真密钥不进沙箱。</span></li>
             </ul>
           </div>
         </div>
