@@ -122,11 +122,14 @@
           <div class="col">
             <p class="meta r"><span class="num">02</span><span class="solo"><span class="en">Core developer, shared across teams</span><span class="zh">核心开发，供多方使用</span></span></p>
             <h3 id="w2-h" class="r">North Sandbox</h3>
-            <p class="line r"><span class="en">A multi-tenant sandbox service compatible with the E2B protocol, also offered on its own.</span><span class="zh">兼容 E2B 协议的多租户沙箱服务，也可独立对外提供。</span></p>
+            <p class="line r"><span class="en">A multi-tenant sandbox service compatible with the E2B protocol: the official SDK runs its core flows with just a new address and credentials. It is also offered on its own.</span><span class="zh">兼容 E2B 协议的多租户沙箱服务：官方 SDK 换地址和凭证即可跑通核心流程，也可独立对外提供。</span></p>
             <ul>
               <li class="r"><span class="en">Per-template warm pools bring sandbox acquisition down to milliseconds.</span><span class="zh">按模板预热，沙箱认领降到毫秒级。</span></li>
               <li class="r"><span class="en">JuiceFS mounts object storage as the sandbox’s working directory: uploading and viewing files go straight to JuiceFS, without starting the sandbox.</span><span class="zh">以 JuiceFS 将对象存储挂载为沙箱工作目录：上传、查看文件等操作直连 JuiceFS，无需启动沙箱。</span></li>
+              <li class="r"><span class="en">Pause and resume: a sandbox can be paused, and its files are kept when it resumes.</span><span class="zh">暂停与恢复：沙箱可暂停，恢复时保留文件状态。</span></li>
               <li class="r"><span class="en">Custom sandbox templates: derive one from a base image and add your own dependencies, beyond the built-in templates.</span><span class="zh">自定义沙箱模板：从基础镜像派生、装上自己的依赖，不只用预置模板。</span></li>
+              <li class="r"><span class="en">Network policy: when a sandbox is created, its egress scope is checked against the most its project allows; deny by default, allow as needed.</span><span class="zh">网络策略：建沙箱时校验其出网范围不超过项目允许的上限，默认拒绝、按需放行。</span></li>
+              <li class="r"><span class="en">Usage metering: each sandbox&#8217;s running time and storage use are recorded in segments and closed out daily, as the basis for billing and quotas.</span><span class="zh">用量计量：分段记录每个沙箱的运行时长与存储用量，每日封账，为计费与配额提供依据。</span></li>
             </ul>
           </div>
         </div>
