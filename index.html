@@ -1,1051 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Charlie Lindgren, PhD - Senior Lecturer</title>
-
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Charlie Lindgren, online pricing researcher at Dalarna University</title>
+  <meta name="description" content="Charlie Lindgren, PhD, Senior Lecturer at Dalarna University in Sweden. Research on online price dispersion, algorithmic pricing and price comparison websites.">
+  <meta property="og:title" content="Charlie Lindgren">
+  <meta property="og:description" content="Senior Lecturer at Dalarna University. Research on online price dispersion, algorithmic pricing and price comparison websites.">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://charlie-lindgren.github.io/">
+  <link rel="canonical" href="https://charlie-lindgren.github.io/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/familjen-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
+  <a class="skip" href="#main">Skip to content</a>
 
-  <!--
-    - #MAIN
-  -->
+  <header class="top">
+    <nav aria-label="Main">
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#background">Background</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Charlie Lindgren" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Charlie Lindgren">Charlie Lindgren, PhD</h1>
-
-          <p class="title">Senior Lecturer</p>
-        </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
+  <main id="main">
+    <section class="hero">
+      <h1>Charlie Lindgren</h1>
+      <div class="hero-text">
+        <p class="lede">I study how prices work online: why the same product costs different amounts in different shops, how pricing algorithms behave, and what price comparison websites do to retailers.</p>
+        <p class="role">Senior Lecturer in Information and Communications Technology at Dalarna University, Sweden.</p>
       </div>
 
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:clg@du.se" class="contact-link">clg@du.se</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+46705797398" class="contact-link">+46 (0) 70-579 73 98</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1986-07-21">July 21, 1986</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Stockholm, Sweden</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/charlielindgren" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://github.com/charlie-lindgren" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            I'm a Senior Lecturer in Information and Communications Technology at Dalarna University, Sweden. 
-            My research focuses on retail pricing, e-commerce, and price comparison websites, combining 
-            statistical analysis with economic theory.
-          </p>
-
-          <p>
-            With a PhD in Microdata Analysis and backgrounds in Economics and Statistics from Umeå University, 
-            I teach courses in data analysis, programming in R and Python, and supervise master's students. 
-            I'm passionate about turning complex data into actionable insights and fostering international 
-            academic collaboration.
-          </p>
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What I Do</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="research icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Research</h4>
-
-                <p class="service-item-text">
-                  Retail pricing, e-commerce, price comparison websites, and market integration.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="teaching icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Teaching</h4>
-
-                <p class="service-item-text">
-                  Data analysis, programming in R and Python, cryptography, and informatics.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="data science icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Data Analysis</h4>
-
-                <p class="service-item-text">
-                  Statistical modelling, big data, machine learning, and visualization.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="supervision icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Supervision</h4>
-
-                <p class="service-item-text">
-                  Master's and bachelor's thesis supervision in Microdata Analysis and Informatics.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
+      <figure class="chart">
+        <div class="plot">
+          <svg viewBox="0 0 1000 260" preserveAspectRatio="none" role="img" aria-label="Three stepped lines show the prices of three shops changing over time. A thicker line follows whichever shop is cheapest at each moment, and it moves between the shops.">
+            <path class="shop" d="M0 118H150V152H310V108H470V178H640V136H810V196H1000"/>
+            <path class="shop" d="M0 172H95V132H265V168H425V122H590V92H735V158H885V120H1000"/>
+            <path class="shop" d="M0 92H205V126H365V204H525V88H690V172H865V76H1000"/>
+            <path class="lowest" d="M0 172H95V132H150V152H265V168H365V204H525V178H640V136H690V172H810V196H1000"/>
+          </svg>
+          <span class="shop-label" style="top: calc(76 / 260 * 100%)">Shop C</span>
+          <span class="shop-label" style="top: calc(120 / 260 * 100%)">Shop B</span>
+          <span class="shop-label" style="top: calc(196 / 260 * 100%)">Shop A</span>
+          <span class="tag">Lowest price</span>
+        </div>
+        <figcaption>Three shops reprice the same product over time, and the lowest price passes from one to another. This is an illustration, not real data.</figcaption>
+      </figure>
+    </section>
+
+    <section class="band" id="research" aria-labelledby="research-h">
+      <h2 id="research-h">Research</h2>
+      <div class="band-body">
+        <div class="theme">
+          <h3>Algorithmic pricing</h3>
+          <p>How to identify algorithmic pricing when price data is sparse, whether it makes price coordination more likely, and whether it makes retailers more profitable.</p>
+        </div>
+        <div class="theme">
+          <h3>Price comparison websites</h3>
+          <p>Why firms compete on these sites, what that does to productivity, profits and wages, and what it is worth to have the lowest price or the highest customer rating.</p>
+        </div>
+        <div class="theme">
+          <h3>Price differences in online markets</h3>
+          <p>What causes prices to differ in markets where searching is cheap, and whether cross-border transaction costs still matter in Nordic online retail.</p>
         </div>
 
-
-        <!--
-          - clients
-        -->
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Ph.D. in Microdata Analysis — Dalarna University</h4>
-
-              <span>2015 — 2021</span>
-
-              <p class="timeline-text">
-                Dissertation: "Voluntary Information Sharing, Retail Pricing, and Firm Performance." 
-                Focus on pricing, statistical analysis, CSR, and big data.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">M.Sc. in Business and Economics — Umeå University</h4>
-
-              <span>2009 — 2014</span>
-
-              <p class="timeline-text">
-                Thesis: "Multivariate Approaches for Value-at-Risk and Expected Shortfall on Electricity Forwards."
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">B.Sc. in Statistics & B.Sc. in Economics — Umeå University</h4>
-
-              <span>2009 — 2013</span>
-
-              <p class="timeline-text">
-                Dual bachelor's degrees with focus on time series analysis and risk management.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Senior Lecturer, ICT — Dalarna University</h4>
-
-              <span>2022 — Present</span>
-
-              <p class="timeline-text">
-                Teaching in informatics including data analysis, programming in R and Python, 
-                and supervising master's students. Research on international online price dispersion.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">STINT Teaching Sabbatical Fellow — Arizona State University</h4>
-
-              <span>2025 — 2026</span>
-
-              <p class="timeline-text">
-                Teaching DAT301: Exploring Data in R and Python. Focus on active learning and 
-                cross-cultural pedagogical exchange between Swedish and U.S. higher education.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Guest Lecturer — Nanchang University, China</h4>
-
-              <span>2024 — 2025</span>
-
-              <p class="timeline-text">
-                Delivered courses on Enterprise Architecture and Database Programming at 
-                Nanchang University in China.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My Skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">R Programming</h5>
-                <data value="95">95%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 95%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Python</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Statistical Analysis</h5>
-                <data value="95">95%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 95%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Data Visualization</h5>
-                <data value="85">85%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="blog">
-
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <div class="medium-link-container">
-            <p class="medium-description">
-              I write about data science, economics, and technology on Medium.
-            </p>
-            <a href="https://medium.com/@charlie.lindgren" target="_blank" class="medium-link-btn">
-              <ion-icon name="logo-medium"></ion-icon>
-              <span>Read my articles on Medium</span>
-            </a>
-          </div>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2034.0076837927096!2d18.0404!3d59.3425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d5e5a4a5a5b%3A0x5a5a5a5a5a5a5a5a!2sTomtebogatan%209%2C%20113%2039%20Stockholm%2C%20Sweden!5e0!3m2!1sen!2sse!4v1647608789441!5m2!1sen!2sse"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <div class="form-success-message" id="successMessage" style="display: none;">
-            <ion-icon name="checkmark-circle-outline"></ion-icon>
-            <p>Thank you! Your message has been sent successfully.</p>
-          </div>
-
-          <form action="https://formspree.io/f/xgoaepez" method="POST" class="form" data-form>
-
-            <input type="hidden" name="_next" value="https://charlie-lindgren.github.io/?sent=true">
-            <input type="hidden" name="_subject" value="New message from portfolio site">
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
-
-    </div>
-
+        <h3 class="sub">Funded projects</h3>
+        <p class="note">I was a researcher on each project, with Prof. Niklas Rudholm as principal investigator.</p>
+        <ul class="rows">
+          <li><span class="when">2023–2025</span><div><cite lang="sv">Hur påverkar algoritmprissättning sannolikheten för prissamordningar?</cite><span class="meta">Swedish Competition Authority, 2,500,000 SEK</span></div></li>
+          <li><span class="when">2023–2025</span><div><cite lang="sv">Kan algoritmprissättning öka handelns lönsamhet?</cite><span class="meta">Hakon Swenson Foundation, 2,363,600 SEK</span></div></li>
+          <li><span class="when">2021–2022</span><div><cite lang="sv">Gör prisjämförelsesidor handeln mer konjunkturkänslig?</cite><span class="meta">Swedish Retail and Wholesale Council, 2,000,000 SEK</span></div></li>
+          <li><span class="when">2019–2020</span><div><cite lang="sv">Jakten på det lägsta priset: hur påverkas handeln av prisjämförelsesidor på nätet?</cite><span class="meta">Swedish Retail and Wholesale Council, 2,000,000 SEK</span></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="band" id="publications" aria-labelledby="publications-h">
+      <h2 id="publications-h">Publications</h2>
+      <div class="band-body">
+        <h3 class="sub first">Journal articles</h3>
+        <ul class="rows">
+          <li><span class="when">2026</span><div><a href="https://doi.org/10.1177/18479790261484828">A heuristic for identifying algorithmic pricing in low-resolution price data</a><span class="meta">Charlie Lindgren, Ross May, Niklas Rudholm and Kenneth Carling. <i>International Journal of Engineering Business Management</i>.</span></div></li>
+          <li><span class="when">2025</span><div><a href="https://doi.org/10.1111/roie.12796">Market integration in Nordic online retail markets: do cross-border transaction costs still matter?</a><span class="meta">Kenneth Carling, Charlie Lindgren and Niklas Rudholm. <i>Review of International Economics</i>.</span></div></li>
+          <li><span class="when">2022</span><div><a href="https://doi.org/10.1080/09593969.2022.2070773">Why do firms compete on price comparison websites? The impact on productivity, profits, and wages</a><span class="meta">Charlie Lindgren, Yujiao Li and Niklas Rudholm. <i>The International Review of Retail, Distribution and Consumer Research</i>.</span></div></li>
+          <li><span class="when">2021</span><div><a href="https://doi.org/10.3390/su13031070">Who are the intended users of CSR reports? Insights from a data-driven approach</a><span class="meta">Charlie Lindgren, Asif M. Huq and Kenneth Carling. <i>Sustainability</i>, 13(3), 1070.</span></div></li>
+          <li><span class="when">2020</span><div><a href="https://doi.org/10.1080/13504851.2020.1789055">Is intertemporal price discrimination the cause of price dispersion in markets with low search costs?</a><span class="meta">Charlie Lindgren, Sven-Olov Daunfeldt, Niklas Rudholm and Siril Yella. <i>Applied Economics Letters</i>.</span></div></li>
+        </ul>
+
+        <h3 class="sub">Working papers under review</h3>
+        <ul class="rows">
+          <li><span class="when">2023</span><div>Discontinuities: what is the value of having the lowest price or highest consumer rating on a price comparison website?<span class="meta">Charlie Lindgren. HFI Working Paper No. 19.</span></div></li>
+          <li><span class="when">2023</span><div>Pricing in retail markets with low search costs: evidence from a price comparison website<span class="meta">Charlie Lindgren, Sven-Olov Daunfeldt and Niklas Rudholm. HFI Working Paper No. 18.</span></div></li>
+        </ul>
+
+        <h3 class="sub">Research reports, in Swedish</h3>
+        <ul class="rows">
+          <li><span class="when">2024</span><div><a lang="sv" href="https://handelsradet.se/forskning-och-utveckling/forskningsprojekt/gor-prisjamforelsesidor-handeln-mer-konjunkturkanslig/">Gör prisjämförelsesidor handeln mer konjunkturkänslig?</a><span class="meta">Niklas Rudholm, Kenneth Carling and Charlie Lindgren. Handelsrådet, report 2024:2.</span></div></li>
+          <li><span class="when">2021</span><div><a lang="sv" href="https://handelsradet.se/forskning-och-utveckling/forskningsprojekt/jakten-pa-det-lagsta-priset-hur-paverkas-handeln-av-prisjamforelsesidor-pa-natet/">Jakten på det lägsta priset: hur påverkas handeln av prisjämförelsesidor på nätet?</a><span class="meta">Niklas Rudholm, Sven-Olov Daunfeldt, Charlie Lindgren, Yujiao Li and Siril Yella. Handelsrådet, report 2021:4.</span></div></li>
+          <li><span class="when">2019</span><div><a lang="sv" href="https://www.konkurrensverket.se/publikationer/prisspridning-pa-e-handelsmarknader-med-laga-sokkostnader/">Prisspridning på e-handelsmarknader med låga sökkostnader</a><span class="meta">Niklas Rudholm and Charlie Lindgren. Swedish Competition Authority, report 2019:1.</span></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="band" id="teaching" aria-labelledby="teaching-h">
+      <h2 id="teaching-h">Teaching</h2>
+      <div class="band-body">
+        <p class="prose">I teach programming and data analysis, and supervise theses at bachelor's and master's level. As a STINT Teaching Sabbatical Fellow at Arizona State University in 2025–2026, I taught DAT301, Exploring Data in R and Python, with a focus on active learning. I have also taught as a guest lecturer in Nanchang, China, each year from 2024 to 2026.</p>
+
+        <h3 class="sub">Courses</h3>
+        <ul class="courses">
+          <li>Python and R programming</li>
+          <li>Applied big data and cloud computing</li>
+          <li>Enterprise architecture and database programming</li>
+          <li>Component-based web design</li>
+          <li>Cryptography</li>
+          <li>Introductory microeconomics</li>
+        </ul>
+
+        <h3 class="sub">Academic leadership</h3>
+        <ul class="rows">
+          <li><span class="when">2026–</span><div>Project Manager, COMP26<span class="meta">Revising Dalarna University's bachelor's programmes in computing, based on the ACM curriculum framework.</span></div></li>
+          <li><span class="when">2025–</span><div>Chair, Review Panel on Education and Study Plans<span class="meta">Dalarna University.</span></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="band" id="background" aria-labelledby="background-h">
+      <h2 id="background-h">Background</h2>
+      <div class="band-body">
+        <ul class="rows flush">
+          <li><span class="when">2025–2026</span><div>STINT Teaching Sabbatical Fellow<span class="meta">Arizona State University, School of Mathematical and Statistical Sciences.</span></div></li>
+          <li><span class="when">2022–</span><div>Senior Lecturer, Information and Communications Technology<span class="meta">Dalarna University.</span></div></li>
+          <li><span class="when">2021–2022</span><div>Lecturer, Information and Communications Technology<span class="meta">Dalarna University.</span></div></li>
+          <li><span class="when">2015–2021</span><div>PhD in Microdata Analysis<span class="meta">Dalarna University. Dissertation: <i>Voluntary Information Sharing, Retail Pricing, and Firm Performance</i>.</span></div></li>
+          <li><span class="when">2009–2014</span><div>MSc in Economics and MSc in Business and Economics<span class="meta">Umeå University.</span></div></li>
+          <li><span class="when">2009–2013</span><div>BSc in Statistics and BSc in Economics<span class="meta">Umeå University.</span></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="band contact" id="contact" aria-labelledby="contact-h">
+      <h2 id="contact-h">Contact</h2>
+      <div class="band-body">
+        <p class="email"><a href="mailto:clg@du.se">clg@du.se</a></p>
+        <address>Dalarna University, Högskolegatan 2, SE-791 31 Falun, Sweden</address>
+        <p class="links">
+          <a class="cv" href="assets/charlie-lindgren-cv.pdf">Download CV (PDF)</a>
+          <a href="https://www.linkedin.com/in/charlielindgren">LinkedIn</a>
+          <a href="https://github.com/charlie-lindgren">GitHub</a>
+        </p>
+      </div>
+    </section>
   </main>
-
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <script>
-    // Check if form was submitted and show success message
-    if (window.location.search.includes('sent=true')) {
-      // Show success message
-      document.getElementById('successMessage').style.display = 'flex';
-      // Navigate to contact page
-      document.querySelector('[data-page="contact"]').classList.add('active');
-      document.querySelector('[data-page="about"]').classList.remove('active');
-      // Update nav
-      document.querySelectorAll('[data-nav-link]').forEach(link => {
-        link.classList.remove('active');
-        if (link.textContent.toLowerCase() === 'contact') link.classList.add('active');
-      });
-      // Clean URL
-      history.replaceState({}, document.title, window.location.pathname);
-    }
-  </script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
-
 </html>
