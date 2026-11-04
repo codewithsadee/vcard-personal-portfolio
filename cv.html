@@ -9,19 +9,25 @@
   <link rel="canonical" href="https://charlie-lindgren.github.io/cv.html">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/style.css">
-  <script>document.documentElement.classList.add("js")</script>
+  <script>document.documentElement.classList.add("js");try{if(localStorage.getItem("theme")==="dark")document.documentElement.dataset.theme="dark"}catch(e){}</script>
+  <script src="assets/js/site.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-  <header class="site-header">
+  <header class="site-header" data-header>
     <div class="wrap header-row">
       <a class="site-name" href="./">Charlie Lindgren</a>
-      <nav aria-label="Main">
-        <a href="research.html">Research</a>
-        <a href="teaching.html">Teaching</a>
-        <a href="cv.html" aria-current="page">CV</a>
-      </nav>
+      <div class="header-end">
+        <nav aria-label="Main">
+          <a href="research.html">Research</a>
+          <a href="teaching.html">Teaching</a>
+          <a href="cv.html" aria-current="page">CV</a>
+        </nav>
+        <button class="theme-toggle js-only" type="button" data-theme-toggle aria-label="Switch to dark mode">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path class="icon-moon" d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/><g class="icon-sun"><circle cx="12" cy="12" r="4"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></g></svg>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -31,8 +37,8 @@
 
     <section aria-labelledby="positions-h">
       <h2 id="positions-h">Positions</h2>
-      <ul class="rows">
-        <li>
+      <ul class="rows panel timeline">
+        <li class="is-current">
           <div>
             <p class="row-title">Senior Lecturer, Information and Communications Technology</p>
             <p class="row-sub">Dalarna University, Falun, Sweden.</p>
@@ -65,7 +71,7 @@
 
     <section aria-labelledby="education-h">
       <h2 id="education-h">Education</h2>
-      <ul class="rows">
+      <ul class="rows panel timeline">
         <li>
           <div>
             <p class="row-title">PhD in Microdata Analysis</p>
@@ -92,7 +98,7 @@
 
     <section aria-labelledby="appointments-h">
       <h2 id="appointments-h">Appointments at Dalarna University</h2>
-      <ul class="rows">
+      <ul class="rows panel">
         <li><div><p class="row-title">Project Manager, COMP26</p></div><span class="row-date">2026–</span></li>
         <li><div><p class="row-title">Chair, Review Panel on Education and Study Plans (UKU)</p></div><span class="row-date">2025–</span></li>
         <li><div><p class="row-title">Member, Evaluation Committee for Education (UUU)</p></div><span class="row-date">2024–2025</span></li>
@@ -103,7 +109,7 @@
 
     <section aria-labelledby="languages-h">
       <h2 id="languages-h">Languages</h2>
-      <p class="plain">Swedish (native) and English (fluent).</p>
+      <p class="plain panel">Swedish (native) and English (fluent).</p>
     </section>
   </main>
 
