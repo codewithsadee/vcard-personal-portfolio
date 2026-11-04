@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research | Charlie Lindgren</title>
+  <meta name="description" content="Publications, working papers, reports and funded projects by Charlie Lindgren on algorithmic pricing, price comparison websites and online price differences.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://charlie-lindgren.github.io/research.html">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.add("js");try{if(localStorage.getItem("theme")==="dark")document.documentElement.dataset.theme="dark"}catch(e){}</script>
+  <script src="assets/js/site.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="wrap header-row">
+      <a class="site-name" href="./">Charlie Lindgren</a>
+      <div class="header-end">
+        <nav aria-label="Main">
+          <a href="research.html" aria-current="page">Research</a>
+          <a href="teaching.html">Teaching</a>
+          <a href="cv.html">CV</a>
+        </nav>
+        <button class="theme-toggle js-only" type="button" data-theme-toggle aria-label="Switch to dark mode">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path class="icon-moon" d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/><g class="icon-sun"><circle cx="12" cy="12" r="4"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></g></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="wrap page">
+    <h1>Research</h1>
+    <p class="intro">I study online price dispersion, algorithmic pricing and e-commerce market dynamics, mostly using large-scale price data from comparison websites.</p>
+
+    <section id="publications" aria-labelledby="publications-h" data-filter-root data-noun="publication">
+      <h2 id="publications-h">Publications</h2>
+
+      <div class="toolbar card js-only">
+        <div class="toolbar-top">
+          <label class="search">
+            <span class="visually-hidden">Search publications</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+            <input type="search" placeholder="Search publications" data-filter-search>
+          </label>
+          <label class="sort">
+            <span>Sort</span>
+            <select data-filter-sort>
+              <option value="new">Newest first</option>
+              <option value="old">Oldest first</option>
+            </select>
+          </label>
+        </div>
+        <div class="filter-row" role="group" aria-label="Filter by topic">
+          <button type="button" data-filter="topic" data-value="all" aria-pressed="true">All topics</button>
+          <button type="button" data-filter="topic" data-value="algorithmic" aria-pressed="false">Algorithmic pricing</button>
+          <button type="button" data-filter="topic" data-value="comparison" aria-pressed="false">Comparison websites</button>
+          <button type="button" data-filter="topic" data-value="dispersion" aria-pressed="false">Price differences</button>
+        </div>
+        <div class="filter-row" role="group" aria-label="Filter by type">
+          <button type="button" data-filter="type" data-value="all" aria-pressed="true">All types</button>
+          <button type="button" data-filter="type" data-value="article" aria-pressed="false">Journal articles</button>
+          <button type="button" data-filter="type" data-value="paper" aria-pressed="false">Working papers</button>
+          <button type="button" data-filter="type" data-value="report" aria-pressed="false">Reports</button>
+        </div>
+        <p class="result-count" role="status" data-filter-count></p>
+      </div>
+
+      <ol class="pub-list" data-filter-list>
+        <li class="pub card" data-order="1" data-topic="algorithmic" data-type="article">
+          <div class="pub-head"><span class="pub-year">2026</span><span class="tag">Journal article</span><span class="tag tag-open">Open access</span></div>
+          <a class="pub-title" href="https://doi.org/10.1177/18479790261484828">A heuristic for identifying algorithmic pricing in low-resolution price data</a>
+          <p class="pub-meta">Charlie Lindgren, Ross May, Niklas Rudholm and Kenneth Carling. <i>International Journal of Engineering Business Management</i>.</p>
+          <div class="pub-actions js-only">
+            <button class="text-button" type="button" data-abstract aria-expanded="false" aria-controls="abstract-1">Show abstract</button>
+            <button class="text-button" type="button" data-copy="Lindgren, C., May, R., Rudholm, N., and Carling, K. (2026). A heuristic for identifying algorithmic pricing in low-resolution price data. International Journal of Engineering Business Management. https://doi.org/10.1177/18479790261484828">Copy citation</button>
+          </div>
+          <div class="abstract" id="abstract-1"><div><p>Existing methods for detecting algorithmic pricing rely on high-frequency data with sub-daily timestamps, yet academic researchers and competition authorities typically have access only to daily price snapshots. This paper develops a heuristic that identifies likely algorithmic pricers in such low-resolution data by combining two standardised metrics: the Average Rate of Price Changes (ARPC), capturing the frequency of price adjustments, and a Market Presence Ratio (MPR), capturing sustained retailer engagement. Requiring both metrics to exceed a threshold reduces false positives from promotional sellers and transient market participants. We apply the heuristic to a dataset of 10,365 unique retailer-category observations from the PriceSpy price comparison platform, covering seven national markets and 16 product categories over an 18-month period (July 2021–December 2022). Our results show that algorithmic pricing is prevalent across markets, with algorithmic pricers present in all 16 categories in the United Kingdom and in all seven countries for six categories. Prevalence is notably higher in consumer electronics than in household appliances. As a lower-bound estimate, approximately 4.5% of retailers are classified as algorithmic pricers at our baseline threshold. The heuristic provides a practical screening tool for competition authorities investigating algorithmic pricing adoption using commercially available data.</p></div></div>
+        </li>
+        <li class="pub card" data-order="2" data-topic="dispersion" data-type="article">
+          <div class="pub-head"><span class="pub-year">2025</span><span class="tag">Journal article</span></div>
+          <a class="pub-title" href="https://doi.org/10.1111/roie.12796">Market integration in Nordic online retail markets: do cross-border transaction costs still matter?</a>
+          <p class="pub-meta">Kenneth Carling, Charlie Lindgren and Niklas Rudholm. <i>Review of International Economics</i>.</p>
+          <div class="pub-actions js-only">
+            <button class="text-button" type="button" data-abstract aria-expanded="false" aria-controls="abstract-2">Show abstract</button>
+            <button class="text-button" type="button" data-copy="Carling, K., Lindgren, C., and Rudholm, N. (2025). Market integration in Nordic online retail markets: Do cross-border transaction costs still matter? Review of International Economics. https://doi.org/10.1111/roie.12796">Copy citation</button>
+          </div>
+          <div class="abstract" id="abstract-2"><div><p>If online retail markets are integrated, in that cost shocks in one country also affect pricing in other countries, asymmetric shocks to any one country in the region will spill over to neighboring countries as well. Using web-scraped product-level prices from a group of retail firms selling identical products in at least two of the four Nordic markets under study, we investigate if national markets are segmented at the borders. Contrary to previous studies, we use differences in product characteristics to divide the data into products that are easily transported across borders and those that are not. At the extreme end of the transportability spectrum, we investigate market integration for four types of games for computers or game consoles that are delivered via downloads, where the cross-border transaction costs should be close to zero. Our results show that markets for product categories where cross-border transaction costs are high are also segmented at the border, while markets for product categories that can easily be traded and transported between countries are not. As such, cross-border transaction costs still matter for market segmentation, but only for the subset of products where such costs are high.</p></div></div>
+        </li>
+        <li class="pub card" data-order="3" data-topic="comparison" data-type="report">
+          <div class="pub-head"><span class="pub-year">2024</span><span class="tag">Report, in Swedish</span></div>
+          <a class="pub-title" lang="sv" href="https://handelsradet.se/forskning-och-utveckling/forskningsprojekt/gor-prisjamforelsesidor-handeln-mer-konjunkturkanslig/">Gör prisjämförelsesidor handeln mer konjunkturkänslig?</a>
+          <p class="pub-meta">Niklas Rudholm, Kenneth Carling and Charlie Lindgren. Handelsrådet, report 2024:2.</p>
+          <div class="pub-actions js-only">
+            <button class="text-button" type="button" data-copy="Rudholm, N., Carling, K., and Lindgren, C. (2024). Gör prisjämförelsesidor handeln mer konjunkturkänslig? Handelsrådets Forskningsrapport 2024:2.">Copy citation</button>
+          </div>
+        </li>
+        <li class="pub card" data-order="4" data-topic="comparison" data-type="paper">
+          <div class="pub-head"><span class="pub-year">2023</span><span class="tag">Working paper</span><span class="tag">Under review</span></div>
+          <span class="pub-title">Discontinuities: what is the value of having the lowest price or highest consumer rating on a price comparison website?</span>
+          <p class="pub-meta">Charlie Lindgren. HFI Working Paper No. 19.</p>
+          <div class="pub-actions js-only">
+            <button class="text-button" type="button" data-copy="Lindgren, C. (2023). Discontinuities: What is the value of having the lowest price or highest consumer rating on a price comparison website? HFI Working Paper No. 19.">Copy citation</button>
+          </div>
+        </li>
+        <li class="pub card" data-order="5" data-topic="comparison dispersion" data-type="paper">
+          <div class="pub-head"><span class="pub-year">2023</span><span class="tag">Working paper</span><span class="tag">Under review</span></div>
+          <span class="pub-title">Pricing in retail markets with low search costs: evidence from a price comparison website</span>
+          <p class="pub-meta">Charlie Lindgren, Sven-Olov Daunfeldt and Niklas Rudholm. HFI Working Paper No. 18.</p>
+          <div class="pub-actions js-only">
+            <button class="text-button" type="button" data-copy="Lindgren, C., Daunfeldt, S.-O., and Rudholm, N. (2023). Pricing in retail markets with low search costs: Evidence from a price comparison website. HFI Working Paper No. 18.">Copy citation</button>
+          </div>
+        </li>
+        <li class="pub card" data-order="6" data-topic="comparison" data-type="article">
+          <div class="pub-head"><span class="pub-year">2022</span><span class="tag">Journal article</span></div>
+          <a class="pub-title" href="https://doi.org/10.1080/09593969.2022.2070773">Why do firms compete on price comparison websites? The impact on productivity, profits, and wages</a>
+          <p class="pub-meta">Charlie Lindgren, Yujiao Li and Niklas Rudholm. <i>The International Review of Retail, Distribution and Consumer Research</i>.</p>
+          <div class="pub-actions js-only">
+            <button class="text-button" type="button" data-copy="Lindgren, C., Li, Y., and Rudholm, N. (2022). Why do firms compete on price comparison websites? The impact on productivity, profits, and wages. The International Review of Retail, Distribution and Consumer Research. https://doi.org/10.1080/09593969.2022.2070773">Copy citation</button>
+          </div>
+        </li>
+        <li class="pub card" data-order="7" data-topic="other" data-type="article">
+          <div class="pub-head"><span class="pub-year">2021</span><span class="tag">Journal article</span><span class="tag tag-open">Open access</span></div>
+          <a class="pub-title" href="https://doi.org/10.3390/su13031070">Who are the intended users of CSR reports? Insights from a data-driven approach</a>
+          <p class="pub-meta">Charlie Lindgren, Asif M. Huq and Kenneth Carling. <i>Sustainability</i>, 13(3), 1070.</p>
+          <div class="pub-actions js-only">
+            <button class="text-button" type="button" data-abstract aria-expanded="false" aria-controls="abstract-7">Show abstract</button>
+            <button class="text-button" type="button" data-copy="Lindgren, C., Huq, A. M., and Carling, K. (2021). Who are the intended users of CSR reports? Insights from a data-driven approach. Sustainability, 13(3), 1070. https://doi.org/10.3390/su13031070">Copy citation</button>
+          </div>
+          <div class="abstract" id="abstract-7"><div><p>There is extant research on theorization, conceptualization, determinants, and consequences of corporate social responsibility (CSR). However, what firms include in their CSR or sustainability reports are much less covered and are predominantly covered in case studies of individual firms. In this paper, we instead take a holistic view and simultaneously explore what firms around the globe currently disclose in these reports, more specifically we investigate if firms are shareholder or stakeholder focused. In this investigation, we check the alignment of the reports to the materiality framework of Sustainability Accounting Standards Board (SASB) which was developed having shareholders as the intended user. To estimate what firms disclose in CSR reports we used the unsupervised Bayesian machine learning approach latent Dirichlet allocation (LDA) developed by Blei et al. We conclude that firms target shareholders as the intended users of these reports, even in environments where stakeholder approach of management is argued to be more dominant. Methodologically, we contribute by demonstrating that topic modeling can enhance the objectivity in reviewing CSR-reports.</p></div></div>
+        </li>
+        <li class="pub card" data-order="8" data-topic="comparison" data-type="report">
+          <div class="pub-head"><span class="pub-year">2021</span><span class="tag">Report, in Swedish</span></div>
+          <a class="pub-title" lang="sv" href="https://handelsradet.se/forskning-och-utveckling/forskningsprojekt/jakten-pa-det-lagsta-priset-hur-paverkas-handeln-av-prisjamforelsesidor-pa-natet/">Jakten på det lägsta priset: hur påverkas handeln av prisjämförelsesidor på nätet?</a>
+          <p class="pub-meta">Niklas Rudholm, Sven-Olov Daunfeldt, Charlie Lindgren, Yujiao Li and Siril Yella. Handelsrådet, report 2021:4.</p>
+          <div class="pub-actions js-only">
+            <button class="text-button" type="button" data-copy="Rudholm, N., Daunfeldt, S.-O., Lindgren, C., Li, Y., and Yella, S. (2021). Jakten på det lägsta priset: hur påverkas handeln av prisjämförelsesidor på nätet? Handelsrådets Forskningsrapport 2021:4.">Copy citation</button>
+          </div>
+        </li>
+        <li class="pub card" data-order="9" data-topic="dispersion" data-type="article">
+          <div class="pub-head"><span class="pub-year">2020</span><span class="tag">Journal article</span></div>
+          <a class="pub-title" href="https://doi.org/10.1080/13504851.2020.1789055">Is intertemporal price discrimination the cause of price dispersion in markets with low search costs?</a>
+          <p class="pub-meta">Charlie Lindgren, Sven-Olov Daunfeldt, Niklas Rudholm and Siril Yella. <i>Applied Economics Letters</i>.</p>
+          <div class="pub-actions js-only">
+            <button class="text-button" type="button" data-copy="Lindgren, C., Daunfeldt, S.-O., Rudholm, N., and Yella, S. (2020). Is intertemporal price discrimination the cause of price dispersion in markets with low search costs? Applied Economics Letters. https://doi.org/10.1080/13504851.2020.1789055">Copy citation</button>
+          </div>
+        </li>
+        <li class="pub card" data-order="10" data-topic="dispersion" data-type="report">
+          <div class="pub-head"><span class="pub-year">2019</span><span class="tag">Report, in Swedish</span></div>
+          <a class="pub-title" lang="sv" href="https://www.konkurrensverket.se/publikationer/prisspridning-pa-e-handelsmarknader-med-laga-sokkostnader/">Prisspridning på e-handelsmarknader med låga sökkostnader</a>
+          <p class="pub-meta">Niklas Rudholm and Charlie Lindgren. Swedish Competition Authority, report 2019:1.</p>
+          <div class="pub-actions js-only">
+            <button class="text-button" type="button" data-copy="Rudholm, N., and Lindgren, C. (2019). Prisspridning på e-handelsmarknader med låga sökkostnader. Konkurrensverket, Uppdragsforskning 2019:1.">Copy citation</button>
+          </div>
+        </li>
+      </ol>
+      <p class="filter-empty card" data-filter-empty hidden>No publications match these filters. <button class="text-button" type="button" data-filter-reset>Show all publications</button></p>
+    </section>
+
+    <section aria-labelledby="funding-h">
+      <h2 id="funding-h">Funded projects</h2>
+      <p class="note">I was a researcher on each project, with Prof. Niklas Rudholm as principal investigator. English titles are translations.</p>
+      <ul class="project-grid">
+        <li class="card lift">
+          <p class="project-amount">2,500,000 SEK</p>
+          <p class="row-title">How does algorithmic pricing affect the likelihood of price coordination?</p>
+          <p class="row-sub"><span lang="sv">Hur påverkar algoritmprissättning sannolikheten för prissamordningar?</span></p>
+          <p class="project-foot">Swedish Competition Authority, 2023–2025</p>
+        </li>
+        <li class="card lift">
+          <p class="project-amount">2,363,600 SEK</p>
+          <p class="row-title">Can algorithmic pricing increase retail profitability?</p>
+          <p class="row-sub"><span lang="sv">Kan algoritmprissättning öka handelns lönsamhet?</span></p>
+          <p class="project-foot">Hakon Swenson Foundation, 2023–2025</p>
+        </li>
+        <li class="card lift">
+          <p class="project-amount">2,000,000 SEK</p>
+          <p class="row-title">Do price comparison websites make retail more sensitive to the business cycle?</p>
+          <p class="row-sub"><span lang="sv">Gör prisjämförelsesidor handeln mer konjunkturkänslig?</span></p>
+          <p class="project-foot">Swedish Retail and Wholesale Council, 2021–2022</p>
+        </li>
+        <li class="card lift">
+          <p class="project-amount">2,000,000 SEK</p>
+          <p class="row-title">The hunt for the lowest price: how do online price comparison websites affect retail?</p>
+          <p class="row-sub"><span lang="sv">Jakten på det lägsta priset: hur påverkas handeln av prisjämförelsesidor på nätet?</span></p>
+          <p class="project-foot">Swedish Retail and Wholesale Council, 2019–2020</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <div>
+        <p class="footer-name">Charlie Lindgren</p>
+        <p>Dalarna University, Högskolegatan 2, SE-791 31 Falun, Sweden</p>
+      </div>
+      <p class="footer-links">
+        <a href="mailto:clg@du.se">clg@du.se</a>
+        <a href="https://www.linkedin.com/in/charlielindgren">LinkedIn</a>
+        <a href="https://github.com/charlie-lindgren">GitHub</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

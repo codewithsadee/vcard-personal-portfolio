@@ -1,44 +1,13 @@
-# vCard - Personal portfolio
+# charlie-lindgren.github.io
 
-![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/vcard-personal-portfolio)
-![GitHub stars](https://img.shields.io/github/stars/codewithsadee/vcard-personal-portfolio?style=social)
-![GitHub forks](https://img.shields.io/github/forks/codewithsadee/vcard-personal-portfolio?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
-[![YouTube Video Views](https://img.shields.io/youtube/views/SoxmIlgf2zM?style=social)](https://youtu.be/SoxmIlgf2zM)
+Personal academic website of Charlie Lindgren. Plain HTML, CSS and a little JavaScript, with no build step and no dependencies.
 
-vCard is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript.
+- `index.html`, `research.html`, `teaching.html` and `cv.html` hold the content.
+- `assets/css/style.css` holds the design.
+- `assets/js/site.js` adds animated filtering and search, expandable abstracts, dark mode, the figure viewer and copy buttons. It uses no libraries, and every page reads properly without it.
 
-## Demo
+To add a publication, copy a `<li class="pub card">` block in `research.html`, give it the next `data-order` value (lower means newer), and update the count on the home page.
 
-![vCard Desktop Demo](./website-demo-image/desktop.png "Desktop Demo")
-![vCard Mobile Demo](./website-demo-image/mobile.png "Mobile Demo")
+The CV at `assets/charlie-lindgren-cv.pdf` is the funding build from the CV repository, which leaves out personal contact details. Replace it when the CV changes.
 
-## Prerequisites
-
-Before you begin, ensure you have met the following requirements:
-
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
-
-## Installing vCard
-
-To install **vCard**, follow these steps:
-
-Linux and macOS:
-
-```bash
-sudo git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
-
-Windows:
-
-```bash
-git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
-
-## Contact
-
-If you want to contact me you can reach me at [Twitter](https://www.x.com/codewithsadee_).
-
-## License
-
-MIT
+Fonts: Source Serif 4 and Source Sans 3, both under the SIL Open Font License. The figure on the home page comes from Lindgren et al. (2026), published under CC BY 4.0.
