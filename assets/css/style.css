@@ -1838,7 +1838,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .avatar-box img { width: 150px; }
 
   .info-content .name {
-    white-space: normal;
+    white-space: nowrap;
     text-align: center;
   }
 
