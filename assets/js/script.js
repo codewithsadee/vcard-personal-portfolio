@@ -1,5 +1,34 @@
 'use strict';
 
+// Native dialog keeps keyboard focus inside the project and supports Escape.
+const projectDialog = document.querySelector("#fundo-details");
+const projectTrigger = document.querySelector("[data-project-open]");
+
+projectTrigger.addEventListener("click", function (event) {
+  event.preventDefault();
+  projectDialog.showModal();
+  projectDialog.scrollTop = 0;
+  document.body.classList.add("project-dialog-open");
+});
+
+projectDialog.querySelectorAll(".project-dialog-close, [data-project-close]").forEach(function (button) {
+  button.addEventListener("click", function () { projectDialog.close(); });
+});
+
+projectDialog.addEventListener("click", function (event) {
+  const bounds = projectDialog.getBoundingClientRect();
+  if (event.target === projectDialog &&
+      (event.clientX < bounds.left || event.clientX > bounds.right ||
+       event.clientY < bounds.top || event.clientY > bounds.bottom)) {
+    projectDialog.close();
+  }
+});
+
+projectDialog.addEventListener("close", function () {
+  document.body.classList.remove("project-dialog-open");
+  projectTrigger.focus({ preventScroll: true });
+});
+
 
 
 // element toggle function
