@@ -157,9 +157,8 @@ html { font-family: var(--ff-poppins); }
 
 body { background: var(--smoky-black); }
 
-/* Fundo project details */
+/* Portfolio project details */
 body.project-dialog-open { overflow: hidden; }
-
 .project-dialog {
   width: min(860px, calc(100% - 32px));
   max-height: 90vh;
@@ -174,12 +173,7 @@ body.project-dialog-open { overflow: hidden; }
   border-radius: 22px;
   box-shadow: var(--shadow-5);
 }
-
-.project-dialog::backdrop {
-  background: hsla(0, 0%, 0%, 0.8);
-  backdrop-filter: blur(6px);
-}
-
+.project-dialog::backdrop { background: hsla(0, 0%, 0%, 0.8); backdrop-filter: blur(6px); }
 .project-dialog-toolbar {
   position: sticky;
   top: 0;
@@ -192,19 +186,8 @@ body.project-dialog-open { overflow: hidden; }
   background: var(--eerie-black-2);
   border-bottom: 1px solid var(--jet);
 }
-
 .project-eyebrow { color: var(--orange-yellow-crayola); font-size: 12px; }
-.project-dialog-close {
-  flex-shrink: 0;
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
-  background: var(--onyx);
-  color: var(--white-2);
-  font-size: 28px;
-  text-align: center;
-}
-
+.project-dialog-close { flex-shrink: 0; width: 44px; height: 44px; border-radius: 12px; background: var(--onyx); color: var(--white-2); font-size: 28px; text-align: center; }
 .project-dialog-content { padding: 28px; }
 .project-dialog-header h2 { color: var(--white-2); font-size: clamp(30px, 5vw, 44px); }
 .project-dialog-header p { margin-top: 8px; max-width: 560px; line-height: 1.7; }
@@ -227,7 +210,6 @@ body.project-dialog-open { overflow: hidden; }
 .project-return-btn:hover, .project-dialog-close:hover { background: var(--jet); }
 .project-item > a:focus-visible .project-img::before { background: hsla(0, 0%, 0%, 0.5); }
 .project-item > a:focus-visible .project-item-icon-box { opacity: 1; transform: translate(-50%, -50%) scale(1); }
-
 @media (max-width: 580px) {
   .project-dialog-content { padding: 20px; }
   .project-dialog-toolbar { padding: 10px 16px; }

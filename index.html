@@ -842,14 +842,14 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
+              <a href="#dsm-details" data-project-open aria-haspopup="dialog" aria-controls="dsm-details" aria-label="View DSM. project details">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                  <img src="./assets/images/project-5.png" alt="DSM. product design landing page" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">DSM.</h3>
@@ -1232,6 +1232,56 @@
       <section class="project-detail-section project-design-note">
         <h3>Design intent</h3>
         <p>The intended experience moves from inspiration to exploration to inquiry. This overview describes the displayed design concept; a live website, development stack, and measured results are not included.</p>
+      </section>
+      <button class="project-return-btn" type="button" data-project-close>Back to portfolio <span aria-hidden="true">&rarr;</span></button>
+    </div>
+  </dialog>
+
+  <dialog class="project-dialog" id="dsm-details" aria-labelledby="dsm-title" aria-describedby="dsm-summary">
+    <div class="project-dialog-toolbar">
+      <p class="project-eyebrow">Project details / Web design</p>
+      <button class="project-dialog-close" type="button" aria-label="Close DSM. project details" autofocus>&times;</button>
+    </div>
+    <div class="project-dialog-content">
+      <header class="project-dialog-header">
+        <h2 id="dsm-title">DSM.</h2>
+        <p id="dsm-summary">A bold, playful landing page concept for digital product design.</p>
+      </header>
+      <figure class="project-preview">
+        <img src="./assets/images/project-5.png" alt="DSM. design preview with bold white typography, a dark background, and colorful geometric artwork">
+        <figcaption>Design preview &mdash; expressive geometry meets a focused product message.</figcaption>
+      </figure>
+      <dl class="project-facts">
+        <div><dt>Category</dt><dd>Web design</dd></div>
+        <div><dt>Theme</dt><dd>Digital product design</dd></div>
+        <div><dt>Focus</dt><dd>Landing page &amp; visual identity</dd></div>
+      </dl>
+      <section class="project-detail-section">
+        <h3>Project overview</h3>
+        <p>DSM. explores a confident visual direction for a product design platform. The landing page pairs a concise message about building better products with oversized geometric artwork, giving visitors an immediate sense of creativity and purpose.</p>
+      </section>
+      <div class="project-detail-grid">
+        <section class="project-detail-section">
+          <h3>The design challenge</h3>
+          <p>A visually expressive page still needs a clear reading order. This concept gives the headline its own space and groups supporting information below it, allowing the colorful composition to draw attention without overwhelming the message.</p>
+        </section>
+        <section class="project-detail-section">
+          <h3>Visual direction</h3>
+          <p>A near-black canvas and crisp white typography create a strong foundation. Green, purple, orange, and yellow shapes introduce energy, while a grid, a glossy sphere, and small interface-inspired details suggest experimentation and digital craft.</p>
+        </section>
+      </div>
+      <section class="project-detail-section">
+        <h3>Design highlights</h3>
+        <ul class="project-highlights">
+          <li><strong>Typography with purpose.</strong> The stacked headline makes the product promise the first thing visitors read.</li>
+          <li><strong>A distinctive graphic language.</strong> Oversized circles, angular color blocks, and dimensional accents make the composition memorable.</li>
+          <li><strong>Balanced composition.</strong> A focused text column sits beside expressive artwork, separating information from visual exploration.</li>
+          <li><strong>Minimal navigation.</strong> A compact brand mark and menu keep the opening view uncluttered.</li>
+        </ul>
+      </section>
+      <section class="project-detail-section project-design-note">
+        <h3>Design intent</h3>
+        <p>The intended experience is direct, energetic, and easy to scan: introduce the promise, establish a creative identity, and encourage further exploration. This overview describes the displayed concept; a live product, technology stack, and measured results are not documented.</p>
       </section>
       <button class="project-return-btn" type="button" data-project-close>Back to portfolio <span aria-hidden="true">&rarr;</span></button>
     </div>
