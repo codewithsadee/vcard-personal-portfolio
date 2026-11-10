@@ -1,5 +1,36 @@
 'use strict';
 
+// Native project dialogs provide focus containment and Escape-to-close.
+document.querySelectorAll("[data-project-open]").forEach(function (trigger) {
+  const dialog = document.getElementById(trigger.getAttribute("aria-controls"));
+  if (!dialog) return;
+
+  trigger.addEventListener("click", function (event) {
+    event.preventDefault();
+    dialog.showModal();
+    dialog.scrollTop = 0;
+    document.body.classList.add("project-dialog-open");
+  });
+
+  dialog.querySelectorAll(".project-dialog-close, [data-project-close]").forEach(function (button) {
+    button.addEventListener("click", function () { dialog.close(); });
+  });
+
+  dialog.addEventListener("click", function (event) {
+    const bounds = dialog.getBoundingClientRect();
+    if (event.target === dialog &&
+        (event.clientX < bounds.left || event.clientX > bounds.right ||
+         event.clientY < bounds.top || event.clientY > bounds.bottom)) {
+      dialog.close();
+    }
+  });
+
+  dialog.addEventListener("close", function () {
+    document.body.classList.remove("project-dialog-open");
+    trigger.focus({ preventScroll: true });
+  });
+});
+
 
 
 // element toggle function
