@@ -896,14 +896,14 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
+              <a href="#task-manager-details" data-project-open aria-haspopup="dialog" aria-controls="task-manager-details" aria-label="View Task Manager project details">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                  <img src="./assets/images/project-8.jpg" alt="Task Manager mobile app with task dashboard and daily schedule" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Task Manager</h3>
@@ -1390,6 +1390,56 @@
       <section class="project-detail-section project-design-note">
         <h3>Design intent</h3>
         <p>The intended experience helps players discover content and connect through shared interests. This overview describes the displayed interface concept; a working application, technology stack, and measured results are not documented.</p>
+      </section>
+      <button class="project-return-btn" type="button" data-project-close>Back to portfolio <span aria-hidden="true">&rarr;</span></button>
+    </div>
+  </dialog>
+
+  <dialog class="project-dialog" id="task-manager-details" aria-labelledby="task-manager-title" aria-describedby="task-manager-summary">
+    <div class="project-dialog-toolbar">
+      <p class="project-eyebrow">Project details / Applications</p>
+      <button class="project-dialog-close" type="button" aria-label="Close Task Manager project details" autofocus>&times;</button>
+    </div>
+    <div class="project-dialog-content">
+      <header class="project-dialog-header">
+        <h2 id="task-manager-title">Task Manager</h2>
+        <p id="task-manager-summary">A mobile interface concept for organizing daily tasks, reviewing progress, and planning team schedules.</p>
+      </header>
+      <figure class="project-preview">
+        <img src="./assets/images/project-8.jpg" alt="Three Task Manager mobile screens showing an introduction, a purple progress dashboard, and an April daily schedule" width="600" height="451">
+        <figcaption>Application design preview &mdash; daily planning, task progress, and team assignments.</figcaption>
+      </figure>
+      <dl class="project-facts">
+        <div><dt>Category</dt><dd>Applications</dd></div>
+        <div><dt>Theme</dt><dd>Productivity &amp; team planning</dd></div>
+        <div><dt>Focus</dt><dd>Mobile interface &amp; task organization</dd></div>
+      </dl>
+      <section class="project-detail-section">
+        <h3>Project overview</h3>
+        <p>Task Manager presents a mobile planning experience through three connected views: an introductory screen, a task dashboard, and a daily schedule. The design brings pending work, monthly progress, and team assignments into a compact interface.</p>
+      </section>
+      <div class="project-detail-grid">
+        <section class="project-detail-section">
+          <h3>The design challenge</h3>
+          <p>A task application needs to show both the bigger picture and the next thing to do. This concept separates progress summaries from the daily timeline, helping users scan their workload before reviewing individual appointments and assignments.</p>
+        </section>
+        <section class="project-detail-section">
+          <h3>Visual direction</h3>
+          <p>A vivid purple dashboard contrasts with pale blue screens and dark typography. Rounded cards, soft shadows, and cyan accents establish a consistent visual language, while abstract artwork adds character to the opening screen.</p>
+        </section>
+      </div>
+      <section class="project-detail-section">
+        <h3>Design highlights</h3>
+        <ul class="project-highlights">
+          <li><strong>Focused introduction.</strong> A short daily-task message and a prominent Get Started button introduce the application.</li>
+          <li><strong>Progress at a glance.</strong> Monthly review cards group task counts by status for quick scanning.</li>
+          <li><strong>Daily scheduling.</strong> A date selector and time-based task cards organize upcoming work.</li>
+          <li><strong>Visible team assignments.</strong> Small profile images connect tasks with the people involved.</li>
+        </ul>
+      </section>
+      <section class="project-detail-section project-design-note">
+        <h3>Design intent</h3>
+        <p>The intended experience makes daily planning easy to scan, from a broad progress overview to scheduled tasks. This overview describes the displayed interface concept; a working application, technology stack, and measured results are not documented.</p>
       </section>
       <button class="project-return-btn" type="button" data-project-close>Back to portfolio <span aria-hidden="true">&rarr;</span></button>
     </div>
