@@ -770,14 +770,14 @@
           <ul class="project-list">
 
             <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+              <a href="#finance-details" data-project-open aria-haspopup="dialog" aria-controls="finance-details" aria-label="View Finance project details">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                  <img src="./assets/images/project-1.jpg" alt="Finance dashboard with balance chart, transaction history, and upcoming payments" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Finance</h3>
@@ -1440,6 +1440,56 @@
       <section class="project-detail-section project-design-note">
         <h3>Design intent</h3>
         <p>The intended experience makes daily planning easy to scan, from a broad progress overview to scheduled tasks. This overview describes the displayed interface concept; a working application, technology stack, and measured results are not documented.</p>
+      </section>
+      <button class="project-return-btn" type="button" data-project-close>Back to portfolio <span aria-hidden="true">&rarr;</span></button>
+    </div>
+  </dialog>
+
+  <dialog class="project-dialog" id="finance-details" aria-labelledby="finance-title" aria-describedby="finance-summary">
+    <div class="project-dialog-toolbar">
+      <p class="project-eyebrow">Project details / Web development</p>
+      <button class="project-dialog-close" type="button" aria-label="Close Finance project details" autofocus>&times;</button>
+    </div>
+    <div class="project-dialog-content">
+      <header class="project-dialog-header">
+        <h2 id="finance-title">Finance</h2>
+        <p id="finance-summary">A dashboard concept for reviewing balances, transactions, and upcoming payments in one place.</p>
+      </header>
+      <figure class="project-preview">
+        <img src="./assets/images/project-1.jpg" alt="Dark Finance dashboard showing transfer shortcuts, a monthly balance chart, transaction history, recent activity, and upcoming payments" width="600" height="451">
+        <figcaption>Dashboard preview &mdash; account overview, payment activity, and transaction history.</figcaption>
+      </figure>
+      <dl class="project-facts">
+        <div><dt>Category</dt><dd>Web development</dd></div>
+        <div><dt>Theme</dt><dd>Finance &amp; payment management</dd></div>
+        <div><dt>Focus</dt><dd>Dashboard layout &amp; data presentation</dd></div>
+      </dl>
+      <section class="project-detail-section">
+        <h3>Project overview</h3>
+        <p>Finance presents an account overview through a compact dashboard. The preview brings together transfer shortcuts, a balance chart, transaction history, recent activity, and upcoming payments so users can review several aspects of their finances from a single screen.</p>
+      </section>
+      <div class="project-detail-grid">
+        <section class="project-detail-section">
+          <h3>The design challenge</h3>
+          <p>A financial dashboard needs to make dense information easy to scan. This concept separates the main balance and chart from supporting activity lists, using clear headings and grouped content to distinguish past transactions from upcoming payments.</p>
+        </section>
+        <section class="project-detail-section">
+          <h3>Visual direction</h3>
+          <p>A near-black canvas and light typography establish the interface. Purple, cyan, and green gradients highlight the payment card and chart bars, while rounded panels and compact navigation icons keep the composition consistent.</p>
+        </section>
+      </div>
+      <section class="project-detail-section">
+        <h3>Design highlights</h3>
+        <ul class="project-highlights">
+          <li><strong>Account overview.</strong> A prominent balance and monthly chart introduce the main financial information.</li>
+          <li><strong>Transfer shortcuts.</strong> A row of payment options groups common actions near the top of the dashboard.</li>
+          <li><strong>Transaction history.</strong> Rows pair transaction names with times, amounts, and status labels.</li>
+          <li><strong>Payment visibility.</strong> Separate recent-activity and upcoming-payment lists distinguish completed activity from pending items.</li>
+        </ul>
+      </section>
+      <section class="project-detail-section project-design-note">
+        <h3>Design intent</h3>
+        <p>The intended experience gives users a clear overview before they explore individual transactions. This overview describes the displayed dashboard concept; live banking connections, payment processing, a technology stack, and measured results are not documented.</p>
       </section>
       <button class="project-return-btn" type="button" data-project-close>Back to portfolio <span aria-hidden="true">&rarr;</span></button>
     </div>
